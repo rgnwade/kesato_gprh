@@ -1,0 +1,37 @@
+<VirtualHost 172.104.178.160:8080>
+
+    ServerName gprh.kesato.io
+    ServerAlias www.gprh.kesato.io
+    ServerAdmin info@gprh.kesato.io
+    DocumentRoot /home/admin/web/gprh.kesato.io/public_html
+    ScriptAlias /cgi-bin/ /home/admin/web/gprh.kesato.io/cgi-bin/
+    Alias /vstats/ /home/admin/web/gprh.kesato.io/stats/
+    Alias /error/ /home/admin/web/gprh.kesato.io/document_errors/
+    #SuexecUserGroup admin admin
+    CustomLog /var/log/httpd/domains/gprh.kesato.io.bytes bytes
+    CustomLog /var/log/httpd/domains/gprh.kesato.io.log combined
+    ErrorLog /var/log/httpd/domains/gprh.kesato.io.error.log
+    <Directory /home/admin/web/gprh.kesato.io/public_html>
+        AllowOverride All
+        Options +Includes -Indexes +ExecCGI
+        php_admin_value open_basedir /home/admin/web/gprh.kesato.io/public_html:/home/admin/tmp
+        php_admin_value upload_tmp_dir /home/admin/tmp
+        php_admin_value session.save_path /home/admin/tmp
+    </Directory>
+    <Directory /home/admin/web/gprh.kesato.io/stats>
+        AllowOverride All
+    </Directory>
+
+    <IfModule mod_ruid2.c>
+        RMode config
+        RUidGid admin admin
+        RGroups apache
+    </IfModule>
+    <IfModule itk.c>
+        AssignUserID admin admin
+    </IfModule>
+
+    IncludeOptional /home/admin/conf/web/httpd.gprh.kesato.io.conf*
+
+</VirtualHost>
+

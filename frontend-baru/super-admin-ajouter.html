@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/dist/css/apps.min.css">
+</head>
+<body class="light">
+    <header class="header">
+        <div class="row align-items-center">
+            <div class="col-md-2">
+                <a href="index.html" class="header-logo text-uppercase">gprh</a>
+            </div>
+            <div class="col-md-8">
+                <div class="header-menu">
+                    <ul class="d-flex justify-content-center">
+                        <li><a href="dashboard.html">tableau de bord</a></li>
+                        <li><a href="">gérer mes établissements</a></li>
+                        <li><a href="dashboard-factures.html">gérer mes factures</a></li>
+                        <li><a href="">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="header-pic text-right">
+                    <img src="images/image.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-----------------------------------------------------
+    ------------------------------------------------LISTING
+    ------------------------------------------------------>
+    <section id="box_listing" class="section-content container px-6">
+        <h2 class="head-title text-uppercase">gestion produit membre</h2>
+        <div class="box-listing">
+            <div id="listing_">
+                <div class="text-with-search d-flex justify-content-between align-items-center">
+                    <h3 class="text-title mb-0 text-uppercase"><span class="text-uppercase">Liste de produits</span> <i class="fa fa-angle-right" aria-hidden="true"></i></h3>
+                </div>
+                <div class="listing-table">
+                    <div class="text-right mb-2"><button type="button" class="btn bg-transparent color-link">Export en CSV</button></div>
+                    <div class="listing-head">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <span>No de members <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                            </div>
+                            <div class="col-md-6">
+                                <span>Désignation <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                            </div>
+                            <div class="col-md-2">
+                                <span>Prix <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                            </div>
+                            <div class="col-md-2 text-right">
+                                <span>Statut <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listing-row">
+                        <div class="row align-items-center">
+                            <div class="col-md-2">
+                                <span class="color-link">14563</span>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="color-link">Frais d'inscripion</span>
+                            </div>
+                            <div class="col-md-2">
+                                <span class="text-uppercase">CHF 0.00</span>
+                            </div>
+                            <div class="col-md-2 text-right">
+                                <button type="button" class="btn bg-stabilo">Actif</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listing-row">
+                        <div class="row align-items-center">
+                            <div class="col-md-2">
+                                <span class="color-link">14563</span>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="color-link">Cotisation annuelle GPRH</span>
+                            </div>
+                            <div class="col-md-2">
+                                <span class="text-uppercase">CHF 990.00</span>
+                            </div>
+                            <div class="col-md-2 text-right">
+                                <button type="button" class="btn bg-stabilo">Actif</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listing-row">
+                        <div class="row align-items-center">
+                            <div class="col-md-2">
+                                <span class="color-link">14563</span>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="color-link">Cotisation annuelle GPRH + Suisse Hotel</span>
+                            </div>
+                            <div class="col-md-2">
+                                <span class="text-uppercase">CHF 1990.00</span>
+                            </div>
+                            <div class="col-md-2 text-right">
+                                <button type="button" class="btn bg-stabilo">Actif</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-form-button my-form pt-5 text-center d-flex justify-content-end w-100 mw-100">
+                    <button id="btn_to_edit" type="button" class="btn btn-purple text-uppercase px-5 mr-3">Ajout D'Un Nouveau produit</button>
+                    <a href="super-admin.html" class="btn btn-transaprent-border-purple text-uppercase px-5">retour</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-----------------------------------------------------
+    --------------------------------------------END LISTING
+    ------------------------------------------------------>
+
+    <!-----------------------------------------------------
+    --------------------------------------LISTE DES MEMBRES
+    ------------------------------------------------------>
+    <section id="section_edit" class="section-content container px-6 dp-none">
+        <h2 class="head-title text-uppercase">GESTION PRODUIT MEMBRE</h2>
+        <div class="box-listing">
+            <div class="text-with-search d-flex justify-content-between align-items-center">
+                <h3 class="text-title mb-0 text-uppercase"><span>Frais D'Inscription</span> <i class="fa fa-angle-right" aria-hidden="true"></i></h3>
+            </div>
+            <div class="box-listing-detail">
+                <form action="" method="post" class="my-form">
+                    <div class="row mx-min5">
+                        <div class="col-md-4 pd-x-5">
+                            <div class="form-group in-group">
+                                <label class="text-bold">Désignation produit</label>
+                                <input type="text" class="form-control" placeholder="Frais d'inscription">
+                            </div>
+                        </div>
+                        <div class="col-md-8 pd-x-5">
+                            <div class="row mx-min5">
+                                <div class="col-md-4 pd-x-5">
+                                    <div class="form-group in-group">
+                                        <label class="text-bold">Prix normal</label>
+                                        <input type="text" class="form-control" placeholder="CHF 100.00">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 pd-x-5">
+                                    <div class="form-group in-group">
+                                        <label class="text-bold">Prix affiché</label>
+                                        <input type="text" class="form-control" placeholder="CHF 0.00">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 pd-x-5">
+                                    <div class="form-group in-group">
+                                        <label class="text-bold">Statut</label>
+                                        <div class="custom-select-option position-relative">
+                                            <select name="" id="" class="form-control">
+                                                <option value="">Actif</option>
+                                                <option value="">Non Actif</option>
+                                            </select>
+                                            <div class="arrow-down">
+                                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-form-button my-form text-center d-flex justify-content-end w-100 mw-100 mt-4">
+                        <a href="" class="btn btn-transaprent-border-purple text-uppercase mr-3 px-5 btn-back-liste">retour</a>
+                        <button class="btn btn-purple text-uppercase px-5 btn-back-liste">enregistrer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-----------------------------------------------------
+    ----------------------------------END LISTE DES MEMBRES
+    ------------------------------------------------------>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="footer-logo text-uppercase">gprh</div>
+                </div>
+                <div class="col-md-5">
+                    <div class="footer-menu d-flex">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Discovery</a></li>
+                            <li><a href="">Photo</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Help</a></li>
+                            <li><a href="">Terms</a></li>
+                            <li><a href="">Guidelines</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">Testimonials</a></li>
+                            <li><a href="">Advertise</a></li>
+                            <li><a href="">Integrations</a></li>
+                            <li><a href="">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 pr-0">
+                    <div class="footer-newsletter">
+                        <form action="" class="position-relative">
+                            <input type="email" class="form-control">
+                            <button type="submit" class="btn icon-input"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                        </form>
+                        <p>Stay in touch with us for the freshest products!</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-menu footer-socmed">
+                        <ul>
+                            <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-globe" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/src/js/jquery.min.js"></script>
+    <script src="assets/src/js/jquery-match-height.js"></script>
+    <script src="assets/src/js/owl.carousel.min.js"></script>
+    <script src="assets/dist/js/script.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#btn_to_edit').click(function() {
+                $('#box_listing').fadeOut(function() {
+                    $('#section_edit').fadeIn();
+                })
+            });
+
+            $('.bg-stabilo').click(function() {
+                $('#box_listing').fadeOut(function() {
+                    $('#section_edit').fadeIn();
+                })
+            });
+        });
+    </script>
+</body>
+</html>

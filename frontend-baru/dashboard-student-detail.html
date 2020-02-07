@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+     
+    <link rel="stylesheet" href="assets/dist/css/apps.min.css">
+</head>
+<body class="light">
+    <header class="header">
+        <div class="row align-items-center">
+            <div class="col-md-2">
+                <a href="index.html" class="header-logo text-uppercase">gprh</a>
+            </div>
+            <div class="col-md-8">
+                <div class="header-menu">
+                    <ul class="d-flex justify-content-center">
+                        <li><a href="dashboard.html">tableau de bord</a></li>
+                        <li><a href="">gérer mes établissements</a></li>
+                        <li><a href="dashboard-factures.html">gérer mes factures</a></li>
+                        <li><a href="">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="header-pic text-right">
+                    <img src="images/image.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-content container">
+        <div class="row m-0">
+            <div class="col-md-6 offset-md-3 p-0">
+                <div class="box-form with-shadow">
+                    <div class="bg-white box-pdd box-border">
+                        <h2 class="form-title text-center">Ajout d'une formation</h2>
+                        <form action="" method="post" class="my-form box-form-pdd">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-10 offset-md-1">
+                                        <label class="text-bold">Choisissez votre prochaine sessions de formation en ligne</label>
+                                        <div class="box-form-button mx-auto pt-2 pb-4 text-center d-flex max-w-100 w-80">
+                                            <button type="button" class="btn btn-purple text-uppercase w-50 mr-2">fevrier 2019</button>
+                                            <button type="button" class="btn btn-purple text-uppercase w-50">aout 2019</button>
+                                        </div>
+                                        <label class="text-bold">Choix des option de formations</label>
+                                        <small class="mt-0">Nous vous proposons plusieurs type de formations. <br>Par théme, par forfait ou en options</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <table class="table table-no-border table-td-grey">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="w-75"><span class="text-bold">Thème</span></th>
+                                            <th scope="col"><span class="text-bold">Prix</span></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="d-flex">
+                                                <div class="checkbox-custom multi-line w-195">
+                                                    <input type="checkbox" id="theme1">
+                                                    <label for="theme1"><span>Thème 1 - Protection des consommateurse</span></label>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-center radius20">
+                                                    <i class="fa fa-info" aria-hidden="true"></i>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span>CHF 300,-</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="d-flex">
+                                                <div class="checkbox-custom multi-line w-195">
+                                                    <input type="checkbox" id="theme2">
+                                                    <label for="theme2"><span>Thème 2 - Cuisine et hygiène</span></label>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-center radius20">
+                                                    <i class="fa fa-info" aria-hidden="true"></i>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span>CHF 300,-</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="d-flex">
+                                                <div class="checkbox-custom multi-line w-195">
+                                                    <input type="checkbox" id="theme3">
+                                                    <label for="theme3"><span>Thème 3 - Protection des Travailleurs</span></label>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-center radius20">
+                                                    <i class="fa fa-info" aria-hidden="true"></i>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span>CHF 300,-</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="d-flex">
+                                                <div class="checkbox-custom multi-line w-195">
+                                                    <input type="checkbox" id="theme4">
+                                                    <label for="theme4"><span>Thème 4 - Gestion</span></label>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-center radius20">
+                                                    <i class="fa fa-info" aria-hidden="true"></i>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span>CHF 300,-</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="d-flex">
+                                                <div class="checkbox-custom multi-line w-195">
+                                                    <input type="checkbox" id="forfait4">
+                                                    <label for="forfait4"><span>Forfait 4 thèmes</span></label>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-center radius20">
+                                                    <i class="fa fa-info" aria-hidden="true"></i>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span>CHF 750,-</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2"><hr class="hr-full-width border-w-1"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="col" class="w-75"><span class="text-bold">Options</span></th>
+                                            <th scope="col"><span class="text-bold">Prix</span></th>
+                                        </tr>
+                                        <tr>
+                                            <td class="d-flex">
+                                                <div class="radio-custom multi-line w-195">
+                                                    <input type="radio" name="radio-group-pric" id="comp">
+                                                    <label for="comp"><span>Option - Comptabilité + révision</span></label>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-center radius20">
+                                                    <i class="fa fa-info" aria-hidden="true"></i>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span>CHF 750,-</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="d-flex">
+                                                <div class="radio-custom multi-line w-195">
+                                                    <input type="radio" name="radio-group-pric" id="sal">
+                                                    <label for="sal"><span>Option - Salaire + révision</span></label>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-center radius20">
+                                                    <i class="fa fa-info" aria-hidden="true"></i>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span>CHF 450,-</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2"><hr class="hr-full-width border-w-1"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-promotion">
+                                                    <div class="position-relative">
+                                                        <input type="text" class="form-control" placeholder="Insérez voutre code promo ici">
+                                                        <button type="submit" class="btn bg-transparent">Appliquer</button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="fnt-80 pl-2">
+                                                <small class="d-block mt-0">Besoin d'aide?</small>
+                                                <small class="mt-0">+41 22 300 00 01</small>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2"><hr class="hr-full-width border-w-1"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-right pb-0">
+                                                <small class="text-bold w-90 fnt-80 mt-0">Sous-total</small>
+                                            </td>
+                                            <td class="text-right pb-0">
+                                                <small class="text-bold fnt-80 mt-0">300.00 CHF</small>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-right py-0">
+                                                <small class="text-bold w-90 fnt-80 mt-0">TVA</small>
+                                            </td>
+                                            <td class="text-right py-0">
+                                                <small class="text-bold fnt-80 mt-0">9.00 CHF</small>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-right">
+                                                <small class="text-bold w-90 text-uppercase">total ttc</small>
+                                            </td>
+                                            <td class="text-right">
+                                                <small class="text-bold text-uppercase">CHF 300.00</small>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <div class="checkbox-custom mt-3">
+                                                    <input type="checkbox" id="accepte" checked="">
+                                                    <label for="accepte">J'ai lu et j'accepte les conditions générales du GPRH</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="box-form-button pt-3 mx-auto text-center d-flex">
+                                <a href="index.html" class="btn btn-transaprent-border-purple text-uppercase w-50 mr-2">retour</a>
+                                <button id="btn_doc_2" type="button" class="btn btn-purple text-uppercase w-50">suvant</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-----------------------------------------------------
+    ----------------------End Création d'un compte etudiant
+    ------------------------------------------------------>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="footer-logo text-uppercase">gprh</div>
+                </div>
+                <div class="col-md-5">
+                    <div class="footer-menu d-flex">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Discovery</a></li>
+                            <li><a href="">Photo</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Help</a></li>
+                            <li><a href="">Terms</a></li>
+                            <li><a href="">Guidelines</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">Testimonials</a></li>
+                            <li><a href="">Advertise</a></li>
+                            <li><a href="">Integrations</a></li>
+                            <li><a href="">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 pr-0">
+                    <div class="footer-newsletter">
+                        <form action="" class="position-relative">
+                            <input type="email" class="form-control">
+                            <button type="submit" class="btn icon-input"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                        </form>
+                        <p>Stay in touch with us for the freshest products!</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-menu footer-socmed">
+                        <ul>
+                            <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-globe" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/src/js/jquery.min.js"></script>
+    <script src="assets/src/js/jquery-match-height.js"></script>
+    <script src="assets/src/js/owl.carousel.min.js"></script>
+    <script src="assets/dist/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+     
+    <link rel="stylesheet" href="assets/dist/css/apps.min.css">
+</head>
+<body class="light">
+    <header class="header">
+        <div class="row align-items-center">
+            <div class="col-md-2">
+                <a href="index.html" class="header-logo text-uppercase">gprh</a>
+            </div>
+            <div class="col-md-8">
+                <div class="header-menu">
+                    <ul class="d-flex justify-content-center">
+                        <li><a href="dashboard.html">tableau de bord</a></li>
+                        <li><a href="">gérer mes établissements</a></li>
+                        <li><a href="dashboard-factures.html">gérer mes factures</a></li>
+                        <li><a href="">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="header-pic text-right">
+                    <img src="images/image.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-----------------------------------------------------
+    --------------------------------------------------LOGIN
+    ------------------------------------------------------>
+    <section id="box_login" class="section-content container">
+        <div class="box-form with-shadow">
+            <div class="row m-0">
+                <div class="col-md-6 p-0">
+                    <div class="bg-white box-pdd box-border same-height">
+                        <h2 class="form-title text-center">S'identifier</h2>
+                        <form action="" method="post" class="my-form box-form-pdd">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Entrez votre adresse email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Choisissez un mot de passe">
+                                <small>Mot de passe oubilé ?</small>
+                                <div class="checkbox-custom text-right">
+                                    <input type="checkbox" id="rester">
+                                    <label for="rester">Rester Connecté</label>
+                                </div>
+                            </div>
+                            <div class="box-form-button pt-3 mx-auto">
+                                <button type="submit" class="btn btn-purple text-uppercase w-100 mb-2">Se Connecter</button>
+                                <a href="" class="btn btn-fb text-uppercase w-100"><i class="fa fa-facebook" aria-hidden="true"></i> Se Connecter avec facebook</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6 p-0">
+                    <div class="bg-bluegrey box-pdd box-border border-left-none same-height">
+                        <h2 class="form-title text-center">Créer un compte</h2>
+                        <form action="" method="post" class="my-form box-form-pdd">
+                            <div class="box-form-button pt-3 mx-auto">
+                                <button id="btn_next_login" type="button" class="btn btn-purple text-uppercase w-100 mb-2">créer un compte</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-----------------------------------------------------
+    ----------------------------------------------END LOGIN
+    ------------------------------------------------------>
+
+    <!-----------------------------------------------------
+    -----------------------------------Création d'un compte
+    ------------------------------------------------------>
+    <section id="box_creation" class="section-content container dp-none">
+        <div class="row m-0">
+            <div class="col-md-6 offset-md-3 p-0">
+                <div class="box-form with-shadow">
+                    <div class="bg-white box-pdd box-border">
+                        <h2 class="form-title text-center">Création d'un compte</h2>
+                        <form action="" method="post" class="my-form box-form-pdd">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Entrez votre adresse email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Choisissez un mot de passe">
+                                <small class="d-flex align-items-center text-with-icon"><i class="fa fa-info mr-2" aria-hidden="true"></i> Le Mot de passe doit contenir au moins 6 caractèrs</small>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Rèpétes votre mot de passe">
+                            </div>
+                            <div class="box-form-button pt-3 mx-auto">
+                                <button id="btn_compte" type="button" class="btn btn-purple text-uppercase w-100 mb-2">créer un compte</button>
+                                <a href="" class="btn btn-fb text-uppercase w-100 mb-2"><i class="fa fa-facebook" aria-hidden="true"></i> Se Connecter avec facebook</a>
+                                <a href="login.html" class="btn btn-transaprent-border-purple text-uppercase w-100">annuler</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-----------------------------------------------------
+    -------------------------------END Création d'un compte
+    ------------------------------------------------------>
+
+    <!-----------------------------------------------------
+    --------------------------Création d'un compte etudiant
+    ------------------------------------------------------>
+    <section class="section-content container">
+        <div class="row m-0">
+            <div class="col-md-6 offset-md-3 p-0">
+                <!-- Form Coordonnées Step 1 -->
+                <div id="box_coordonnees_1" class="box-form with-shadow dp-none">
+                    <div class="bg-white box-pdd box-border">
+                        <h2 class="form-title text-center">Création d'un compte étudiant</h2>
+                        <div class="position-relative text-center">
+                            <ul class="bar-progress">
+                                <li class="active">
+                                    <div class="icon"><i class="fa fa-user-o" aria-hidden="true"></i></div>
+                                    <p>Coordonnées</p>
+                                </li>  
+                                <li>
+                                    <div class="icon"><i class="fa fa-calendar-o" aria-hidden="true"></i></div>
+                                    <p>Documents</p>
+                                </li> 
+                                <li>
+                                    <div class="icon"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></div>
+                                    <p>Formation <br> Palements</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <form action="" method="post" class="my-form box-form-pdd">
+                            <div class="d-flex">
+                                <div class="radio-custom text-right mr-3">
+                                    <input type="radio" name="radio-group" id="madame">
+                                    <label for="madame">Madame</label>
+                                </div>
+                                <div class="radio-custom text-right">
+                                    <input type="radio" name="radio-group" id="monsieur">
+                                    <label for="monsieur">Monsieur</label>
+                                </div>
+                            </div>
+                            <div class="form-group in-group">
+                                <input type="text" class="form-control" placeholder="Nom">
+                                <input type="text" class="form-control" placeholder="Prénom">
+                            </div>
+                            <div class="form-group">
+                                <label class="text-bold">Date de naissance</label>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" placeholder="Jour">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" placeholder="Mois">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" placeholder="Anée">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group in-group">
+                                <label class="text-bold">Contact</label>
+                                <input type="text" class="form-control" placeholder="Teléphone fixe">
+                                <input type="text" class="form-control" placeholder="Teléphone mobile">
+                            </div>
+                            <div class="box-form-button pt-3 mx-auto text-center d-flex">
+                                <a href="index.html" class="btn btn-transaprent-border-purple text-uppercase w-50 mr-2">retour</a>
+                                <button id="btn_coor_1" type="button" class="btn btn-purple text-uppercase w-50">suvant</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- End Form Coordonnées Step 1 -->
+
+                <!-- Form Coordonnées Step 2 -->
+                <div id="box_coordonnees_2" class="box-form with-shadow dp-none">
+                    <div class="bg-white box-pdd box-border">
+                        <h2 class="form-title text-center">Création d'un compte étudiant</h2>
+                        <div class="position-relative text-center">
+                            <ul class="bar-progress">
+                                <li class="active">
+                                    <div class="icon"><i class="fa fa-user-o" aria-hidden="true"></i></div>
+                                    <p>Coordonnées</p>
+                                </li>  
+                                <li>
+                                    <div class="icon"><i class="fa fa-calendar-o" aria-hidden="true"></i></div>
+                                    <p>Documents</p>
+                                </li> 
+                                <li>
+                                    <div class="icon"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></div>
+                                    <p>Formation <br> Palements</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <form action="" method="post" class="my-form box-form-pdd">
+                            <div class="form-group in-group">
+                                <label class="text-bold">Adresse</label>
+                                <input type="text" class="form-control" placeholder="Raison sociale">
+                                <input type="text" class="form-control" placeholder="Nom de la société">
+                                <input type="text" class="form-control" placeholder="Compléments d'adresse">
+                                <input type="text" class="form-control" placeholder="Nom de la rue et numéro">
+                                <div class="row mx-min5 mrg-bot-10">
+                                    <div class="col-md-4 pd-x-5">
+                                        <input type="text" class="form-control" placeholder="N Postal">
+                                    </div>
+                                    <div class="col-md-8 pd-x-5">
+                                        <input type="text" class="form-control" placeholder="Ville">
+                                    </div>
+                                </div>
+                                <div class="custom-select-option position-relative">
+                                    <select name="" id="" class="form-control">
+                                        <option value="">Pays</option>
+                                        <option value="">Pays 2</option>
+                                    </select>
+                                    <div class="arrow-down">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="text-bold">Address de facturation</label>
+                                <div id="radio_addrs" class="dp-none">
+                                    <div class="radio-custom mrg-bot-10">
+                                        <input type="radio" name="radio-group-adrs" id="gerant">
+                                        <label for="gerant">Gérant - Rue du moulin 34 - 1201 Genève</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-custom">
+                                    <input type="checkbox" id="ajouter">
+                                    <label for="ajouter">Ajouter une nouville address de facturation</label>
+                                </div>
+                            </div>
+                            <div class="box-form-button pt-4 mx-auto text-center d-flex">
+                                <a href="index.html" class="btn btn-transaprent-border-purple text-uppercase w-50 mr-2">retour</a>
+                                <button id="btn_coor_2" data-next="0" type="button" class="btn btn-purple text-uppercase w-50">suvant</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- End Form Coordonnées Step 2 -->
+
+                <!-- Form Coordonnées Step 2 - Form After Click Checkbox-->
+                <div id="box_mes_address" class="box-form with-shadow dp-none">
+                    <div class="bg-white box-pdd box-border py-5">
+                        <h2 class="form-title text-center">Mes addresses de facturation</h2>
+                        <form action="" method="post" class="my-form box-form-pdd mt-4">
+                            <div class="form-group">
+                                <div class="text-center"><label class="text-bold">Mes address existantes</label></div>
+                            </div>
+                            <div class="box-form-button pt-4 mx-auto text-center max-w-100">
+                                <button id="mes_addrs_une" type="button" class="btn btn-purple text-uppercase">Créer une nouvelle addresse de facturation</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- End Form Coordonnées Step 2 -Form After Click Checkbox-->
+
+                <!-- Form Coordonnées Step 2 - Form New Billing Address-->
+                <div id="box_billing_addrs" class="box-form with-shadow dp-none">
+                    <div class="bg-white box-pdd box-border py-5">
+                        <h2 class="form-title text-center">Ajout d'une adresse de facturation</h2>
+                        <form action="" method="post" class="my-form box-form-pdd">
+                            <div class="form-group in-group">
+                                <label class="text-bold">Adresse de facturation</label>
+                                <input type="text" class="form-control" placeholder="Raison sociale">
+                                <input type="text" class="form-control" placeholder="Nom de la société">
+                                <input type="text" class="form-control" placeholder="Compléments d'adresse">
+                                <input type="text" class="form-control" placeholder="Nom de la rue et numéro">
+                                <div class="row mx-min5 mrg-bot-10">
+                                    <div class="col-md-4 pd-x-5">
+                                        <input type="text" class="form-control" placeholder="N Postal">
+                                    </div>
+                                    <div class="col-md-8 pd-x-5">
+                                        <input type="text" class="form-control" placeholder="Ville">
+                                    </div>
+                                </div>
+                                <div class="custom-select-option position-relative">
+                                    <select name="" id="" class="form-control">
+                                        <option value="">Pays</option>
+                                        <option value="">Pays 2</option>
+                                    </select>
+                                    <div class="arrow-down">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-form-button pt-3 mx-auto text-center d-flex">
+                                <button type="button" class="btn btn-transaprent-border-purple text-uppercase w-50 mr-2">retour</button>
+                                <button id="btn_bill_addrs" type="button" class="btn btn-purple text-uppercase w-50">suvant</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- End Form Coordonnées Step 2 -Form New Billing Address-->
+
+                <!-- Form Coordonnées Step 2 - Form Last-->
+                <div id="box_mes_address_last" class="box-form with-shadow dp-none">
+                    <div class="bg-white box-pdd box-border py-5">
+                        <h2 class="form-title text-center">Mes addresses de facturation</h2>
+                        <form action="" method="post" class="my-form box-form-pdd mt-4">
+                            <div class="form-group">
+                                <div class="text-center"><label class="text-bold">Mes address existantes</label></div>
+                                <div class="radio-custom mrg-bot-10">
+                                    <input type="radio" name="radio-group-last" id="g_suisses">
+                                    <label for="g_suisses">Gérant - Rue du moulin 34 - 1201 Genève - Suisse</label>
+                                </div>
+                            </div>
+                            <div class="box-form-button pt-4 mx-auto text-center max-w-100">
+                                <button id="mes_addrs_cetter_last" type="button" class="btn btn-purple text-uppercase">Utilser cette adresse comme adresse de facturation</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- End Form Coordonnées Step 2 - Form Last-->
+
+                <!-- FORM DOCUMENT -->
+                <!-- Step 1 -->
+                <div id="box_document_1" class="box-form with-shadow dp-none">
+                    <div class="bg-white box-pdd box-border">
+                        <h2 class="form-title text-center">Création d'un compte étudiant</h2>
+                        <div class="position-relative text-center">
+                            <ul class="bar-progress">
+                                <li class="active">
+                                    <div class="icon"><i class="fa fa-user-o" aria-hidden="true"></i></div>
+                                    <p>Coordonnées</p>
+                                </li>  
+                                <li class="active">
+                                    <div class="icon"><i class="fa fa-calendar-o" aria-hidden="true"></i></div>
+                                    <p>Documents</p>
+                                </li> 
+                                <li>
+                                    <div class="icon"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></div>
+                                    <p>Formation <br> Palements</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <form action="" method="post" class="my-form box-form-pdd">
+                            <div class="form-group">
+                                <label class="text-bold">Choisissez votre prochaine sessions de formation en ligne</label>
+                                <div class="box-form-button pt-3 text-center d-flex">
+                                <button type="button" class="btn btn-purple text-uppercase w-50 mr-2">fevrier 2019</button>
+                                <button type="button" class="btn btn-purple text-uppercase w-50">aout 2019</button>
+                            </div>
+                            </div>
+                            <div class="form-group in-group">
+                                <label class="text-bold">Merci de télécharger les documents suivants</label>
+                                <p class="mb-1"><small class="mt-0">- Photocopie de la pièce d'identité du Gérant</small></p>
+                                <p><small class="mt-0">- Votre attestation d'exploitation</small></p>
+                                <div class="checkbox-custom">
+                                    <input type="checkbox" id="enverrai">
+                                    <label for="enverrai">Je les enverrai par la suite</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="box-upload">
+                                    <input type="file" name="" multiple="" class="form-control">
+                                </div>
+                            </div>
+                            <div class="box-form-button pt-3 mx-auto text-center d-flex">
+                                <a href="index.html" class="btn btn-transaprent-border-purple text-uppercase w-50 mr-2">retour</a>
+                                <button id="btn_doc_1" type="button" class="btn btn-purple text-uppercase w-50">suvant</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- End Step 1 -->
+
+                <!-- Step 2 -->
+                <div id="box_document_2" class="box-form with-shadow dp-none">
+                    <div class="bg-white box-pdd box-border">
+                        <h2 class="form-title text-center">Création d'un compte étudiant</h2>
+                        <div class="position-relative text-center">
+                            <ul class="bar-progress">
+                                <li class="active">
+                                    <div class="icon"><i class="fa fa-user-o" aria-hidden="true"></i></div>
+                                    <p>Coordonnées</p>
+                                </li>  
+                                <li class="active">
+                                    <div class="icon"><i class="fa fa-calendar-o" aria-hidden="true"></i></div>
+                                    <p>Documents</p>
+                                </li> 
+                                <li>
+                                    <div class="icon"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></div>
+                                    <p>Formation <br> Palements</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <form action="" method="post" class="my-form box-form-pdd">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-10 offset-md-1">
+                                        <label class="text-bold">Choix des option de formations</label>
+                                        <small class="mt-0">Nous vous proposons plusieurs type de formations. <br>Par théme, par forfait ou en options</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <table class="table table-no-border table-td-grey">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="w-75"><span class="text-bold">Thème</span></th>
+                                            <th scope="col"><span class="text-bold">Prix</span></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="d-flex">
+                                                <div class="checkbox-custom multi-line w-195">
+                                                    <input type="checkbox" id="theme1">
+                                                    <label for="theme1"><span>Thème 1 - Protection des consommateurse</span></label>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-center radius20">
+                                                    <i class="fa fa-info" aria-hidden="true"></i>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span>CHF 300,-</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="d-flex">
+                                                <div class="checkbox-custom multi-line w-195">
+                                                    <input type="checkbox" id="theme2">
+                                                    <label for="theme2"><span>Thème 2 - Cuisine et hygiène</span></label>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-center radius20">
+                                                    <i class="fa fa-info" aria-hidden="true"></i>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span>CHF 300,-</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="d-flex">
+                                                <div class="checkbox-custom multi-line w-195">
+                                                    <input type="checkbox" id="theme3">
+                                                    <label for="theme3"><span>Thème 3 - Protection des Travailleurs</span></label>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-center radius20">
+                                                    <i class="fa fa-info" aria-hidden="true"></i>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span>CHF 300,-</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="d-flex">
+                                                <div class="checkbox-custom multi-line w-195">
+                                                    <input type="checkbox" id="theme4">
+                                                    <label for="theme4"><span>Thème 4 - Gestion</span></label>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-center radius20">
+                                                    <i class="fa fa-info" aria-hidden="true"></i>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span>CHF 300,-</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="d-flex">
+                                                <div class="checkbox-custom multi-line w-195">
+                                                    <input type="checkbox" id="forfait4">
+                                                    <label for="forfait4"><span>Forfait 4 thèmes</span></label>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-center radius20">
+                                                    <i class="fa fa-info" aria-hidden="true"></i>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span>CHF 750,-</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2"><hr class="hr-full-width border-w-1"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="col" class="w-75"><span class="text-bold">Options</span></th>
+                                            <th scope="col"><span class="text-bold">Prix</span></th>
+                                        </tr>
+                                        <tr>
+                                            <td class="d-flex">
+                                                <div class="radio-custom multi-line w-195">
+                                                    <input type="radio" name="radio-group-pric" id="comp">
+                                                    <label for="comp"><span>Option - Comptabilité + révision</span></label>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-center radius20">
+                                                    <i class="fa fa-info" aria-hidden="true"></i>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span>CHF 750,-</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="d-flex">
+                                                <div class="radio-custom multi-line w-195">
+                                                    <input type="radio" name="radio-group-pric" id="sal">
+                                                    <label for="sal"><span>Option - Salaire + révision</span></label>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-center radius20">
+                                                    <i class="fa fa-info" aria-hidden="true"></i>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span>CHF 450,-</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2"><hr class="hr-full-width border-w-1"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-promotion">
+                                                    <div class="position-relative">
+                                                        <input type="text" class="form-control" placeholder="Insérez voutre code promo ici">
+                                                        <button type="submit" class="btn bg-transparent">Appliquer</button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="fnt-80 pl-2">
+                                                <small class="d-block mt-0">Besoin d'aide?</small>
+                                                <small class="mt-0">+41 22 300 00 01</small>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2"><hr class="hr-full-width border-w-1"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-right ">
+                                                <small class="text-bold w-90 fnt-80 mt-0">Sous-total</small>
+                                            </td>
+                                            <td class="text-right">
+                                                <small class="text-bold fnt-80 mt-0">300.00 CHF</small>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-right">
+                                                <small class="text-bold w-90 text-uppercase">total ttc</small>
+                                            </td>
+                                            <td class="text-right">
+                                                <small class="text-bold text-uppercase">CHF 300.00</small>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <div class="checkbox-custom mt-3">
+                                                    <input type="checkbox" id="accepte" checked="">
+                                                    <label for="accepte">J'ai lu et j'accepte les conditions générales du GPRH</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="box-form-button pt-3 mx-auto text-center d-flex">
+                                <a href="index.html" class="btn btn-transaprent-border-purple text-uppercase w-50 mr-2">retour</a>
+                                <button id="btn_doc_2" type="button" class="btn btn-purple text-uppercase w-50">suvant</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- End Step 2 -->
+                <!-- END FORM DOCUMENT -->
+
+                <!-- PAYMENT -->
+                <div id="box_payment" class="box-form with-shadow dp-none">
+                    <div class="bg-white box-border">
+                        <div class="box-pdd"> 
+                            <h2 class="form-title text-center">Paiement de la formation</h2>
+                        </div>
+                        <form action="" method="post" class="my-form">
+                            <div class="px-60">
+                                <label class="text-bold">Choisir son mode de paiement</label>
+                            </div>
+                            <div class="bg-e3 px-60 py-25">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6">
+                                        <div class="d-flex flex-column">
+                                            <div class="radio-custom mb-0">
+                                                <input type="radio" name="radio-group" id="paypal">
+                                                <label for="paypal"><span class="text-bold">Paypal</span></label>
+                                                <div class="pl-38">
+                                                    <small>Un moyen de paiement simple et sécurisé</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 offset-md-3">
+                                        <img src="assets/dist/svg/PayPal.svg" alt="" class="img-fluid payment-icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="px-60 py-25">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6">
+                                        <div class="d-flex flex-column">
+                                            <div class="radio-custom mb-0">
+                                                <input type="radio" name="radio-group" id="visa" checked="">
+                                                <label for="visa"><span class="text-bold">Visa / MasterCard</span></label>
+                                                <div class="pl-38">
+                                                    <small>Un moyen de paiement simple et sécurisé</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 offset-md-3">
+                                        <div class="d-flex">
+                                            <img src="assets/dist/svg/mastercard.svg" alt="" class="img-fluid payment-icon">
+                                            <img src="assets/dist/svg/visa.svg" alt="" class="img-fluid payment-icon">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-e3 px-60 py-25">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6">
+                                        <div class="d-flex flex-column">
+                                            <div class="radio-custom mb-0">
+                                                <input type="radio" name="radio-group" id="postcard">
+                                                <label for="postcard"><span class="text-bold">Postcard / Twint</span></label>
+                                                <div class="pl-38">
+                                                    <small>Un moyen de paiement simple et sécurisé</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 offset-md-3">
+                                        <img src="assets/dist/svg/PayPal.svg" alt="" class="img-fluid payment-icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="px-60 mt-5">
+                                <div class="form-group mb-5">
+                                    <input type="text" class="form-control" placeholder="Nom du titulaire de la carte">
+                                </div>
+                                <div class="form-group in-group">
+                                    <input type="text" class="form-control" placeholder="Numéro de carte de crédit">
+                                    <div class="row mrg-bot-10">
+                                        <div class="col-md-7">
+                                            <div class="row mx-min5">
+                                                <div class="col-md-6 pd-x-5">
+                                                    <input type="text" class="form-control" placeholder="Mois">
+                                                </div>
+                                                <div class="col-md-6 pd-x-5">
+                                                    <input type="text" class="form-control" placeholder="Année">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 offset-md-2">
+                                            <input type="text" class="form-control" placeholder="CCV">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-pdd">
+                                <div class="box-form-button pt-4 mx-auto text-center d-flex">
+                                    <a href="index.html" class="btn btn-transaprent-border-purple text-uppercase w-50 mr-2">retour</a>
+                                    <button id="btn_payment" data-next="0" type="button" class="btn btn-purple text-uppercase w-50">suvant</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div id="box_termine" class="box-form with-shadow dp-none">
+                    <div class="bg-white box-pdd box-border py-5">
+                        <h2 class="form-title text-center">Merci pour votre paiement</h2>
+                        <div class="text-center mt-6">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dapibus tortor nisl, sit amet ultrices ligula scelerisque at.</p>
+                        </div>
+                        <div class="box-form-button pt-4 mx-auto text-center d-flex">
+                            <a href="index.html" class="btn mx-auto btn-purple text-uppercase">Retour sur la console</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- PAYMENT -->
+            </div>
+        </div>
+    </section>
+    <!-----------------------------------------------------
+    ----------------------End Création d'un compte etudiant
+    ------------------------------------------------------>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="footer-logo text-uppercase">gprh</div>
+                </div>
+                <div class="col-md-5">
+                    <div class="footer-menu d-flex">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Discovery</a></li>
+                            <li><a href="">Photo</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Help</a></li>
+                            <li><a href="">Terms</a></li>
+                            <li><a href="">Guidelines</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">Testimonials</a></li>
+                            <li><a href="">Advertise</a></li>
+                            <li><a href="">Integrations</a></li>
+                            <li><a href="">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 pr-0">
+                    <div class="footer-newsletter">
+                        <form action="" class="position-relative">
+                            <input type="email" class="form-control">
+                            <button type="submit" class="btn icon-input"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                        </form>
+                        <p>Stay in touch with us for the freshest products!</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-menu footer-socmed">
+                        <ul>
+                            <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-globe" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/src/js/jquery.min.js"></script>
+    <script src="assets/src/js/jquery-match-height.js"></script>
+    <script src="assets/src/js/owl.carousel.min.js"></script>
+    <script src="assets/dist/js/script.js"></script>
+
+    <script>
+        function show_main_form() {
+            $('#radio_addrs').show();
+            $('#radio_addrs #gerant').prop('checked', true);
+            $('#ajouter').prop('checked', false);
+            $('#ajouter').attr("disabled", true);
+            $('#ajouter').next('label').addClass('disable');
+            $('#box_coordonnees_2').fadeIn();
+            $('#btn_coor_2').attr('data-next', 1);
+        }
+
+        $(document).ready(function() {
+            $('#btn_next_login').click(function() {
+                $('#box_login').fadeOut(function() {
+                    $('#box_creation').fadeIn();
+                })
+            });
+
+            $('#btn_compte').click(function() {
+                $('#box_creation').fadeOut(function() {
+                    $('#box_coordonnees_1').fadeIn();
+                })
+            });
+
+            $('#btn_coor_1').click(function() {
+                $('#box_coordonnees_1').fadeOut(function() {
+                    $('#box_coordonnees_2').fadeIn();
+                })
+            });
+
+            $('#ajouter').click(function() {
+                if($(this).is(':checked')) {
+                    $('#box_coordonnees_2').fadeOut(function() {
+                        $('#box_mes_address').fadeIn();
+                    });
+                }
+            });
+
+            $('#mes_addrs_une').click(function() {
+                $('#box_mes_address').fadeOut(function() {
+                    $('#box_billing_addrs').fadeIn();
+                });
+            });
+
+            $('#btn_bill_addrs').click(function() {
+                $('#box_billing_addrs').fadeOut(function() {
+                    $('#box_mes_address_last').fadeIn();
+                });
+            });
+
+            $('#mes_addrs_cetter_last').click(function() {
+                $('#box_mes_address_last').fadeOut(function() {
+                    show_main_form();
+                });
+            });
+
+            $('#btn_coor_2').click(function() {
+                $('#box_coordonnees_2').fadeOut(function() {
+                    $('#box_document_1').fadeIn();
+                })
+            });
+
+            $('#btn_doc_1').click(function() {
+                $('#box_document_1').fadeOut(function() {
+                    $('#box_document_2').fadeIn();
+                })
+            });
+
+            $('#btn_doc_2').click(function() {
+                $('#box_document_2').fadeOut(function() {
+                    $('#box_payment').fadeIn();
+                })
+            });
+
+            $('#btn_payment').click(function() {
+                $('#box_payment').fadeOut(function() {
+                    $('#box_termine').fadeIn();
+                })
+            });
+        });
+    </script>
+</body>
+</html>

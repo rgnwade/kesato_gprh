@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/dist/css/apps.min.css">
+</head>
+<body class="light">
+    <header class="header">
+        <div class="row align-items-center">
+            <div class="col-md-2">
+                <a href="index.html" class="header-logo text-uppercase">gprh</a>
+            </div>
+            <div class="col-md-8">
+                <div class="header-menu">
+                    <ul class="d-flex justify-content-center">
+                        <li><a href="dashboard.html">tableau de bord</a></li>
+                        <li><a href="dashboard-gerer.html">gérer mes établissements</a></li>
+                        <li><a href="dashboard-factures.html">gérer mes factures</a></li>
+                        <li><a href="">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div id="header_pic" class="header-pic text-right position-relative">
+                    <button type="button" id="btn_head_pic" class="btn btn-head-pic"><img src="images/image.png" alt=""></button>
+                    <div id="popup_account" class="popup-detail-account text-left">
+                        <div class="row mx-min5">
+                            <div class="col-md-4 pd-x-5">
+                                <div class="round-img">
+                                    <img src="images/image.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-8 pd-x-5">
+                                <div class="des-info">
+                                    <h3 class="name">Mary Poppins</h3>
+                                    <p class="text-bold">Gérant</p>
+                                    <p>N<sup>o</sup> de membre 20321</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="action-button">
+                            <a href="modifier-profile.html" class="profile-link">Modifier mom profil</a>
+                            <a href="index.html" class="profile-link">Se déconnector</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-content container px-6">
+        <h2 class="head-title text-uppercase">tableau de bord eleves</h2>
+        <div class="banner-top">
+            <img src="images/dashboard.png" alt="" class="img-fluid o-cover w-100">
+        </div>
+        <p class="text-bold text-center pt-4">Bienvenu dans votre espace élèves</p>
+
+        <div class="dash-status mt-5">
+            <div class="row">
+                <div class="col-md-3">
+                    <p class="text-bold mb-1 d-flex align-items-center text-uppercase">status du d'eleve : <span class="round-color lightgreen d-inline-block ml-2"></span></p>
+                    <p class="color-mediumgrey mb-1">Actif</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="dash-course mt-4">
+            <p class="text-bold mb-2 text-uppercase">Cours et examens</p>
+            <div class="row">
+                <div class="col-md-7 pr-0">
+                    <div class="row mx-min5">
+                        <div class="col-md-4 pd-x-5">
+                            <div class="box-course text-center">
+                                <div class="position-relative">
+                                    <img src="images/dash-1.png" alt="" class="img-fluid">
+                                    <div class="label-status danger small-font px-3"><small class="color-white">Terminé</small></div>
+                                </div>
+                                <div class="border-top text-bg p-1">
+                                    <p class="text-bold mb-0">Thème 2</p>
+                                    <p class="text-bold mb-0">Cuisine & hygiène</p>
+                                </div>
+                                <div class="border-top small-font p-1">
+                                    <small class="d-block">Date de la formation : </small>
+                                    <small>Octobre 2018</small>
+                                </div>
+                                <div class="bg-stabilo border-top p-1 small-font">
+                                    <small class="color-white">Examen réussi</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pd-x-5">
+                            <div class="box-course text-center">
+                                <img src="images/dash-1.png" alt="" class="img-fluid">
+                                <div class="border-top text-bg p-1">
+                                    <p class="text-bold mb-0">Thème 4</p>
+                                    <p class="text-bold mb-0">Gestion</p>
+                                </div>
+                                <div class="border-top small-font p-1">
+                                    <small class="d-block">Date de la formation : </small>
+                                    <small>Octobre 2018</small>
+                                </div>
+                                <div class="bg-red border-top p-1 small-font">
+                                    <small class="color-white">Examen réussi</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pd-x-5">
+                            <div class="box-course text-center">
+                                 <div class="position-relative">
+                                    <img src="images/dash-1.png" alt="" class="img-fluid">
+                                    <div class="label-status warning small-font px-3"><small class="color-white">Prochainement</small></div>
+                                </div>
+                                <div class="border-top text-bg p-1">
+                                    <p class="text-bold mb-0">Option</p>
+                                    <p class="text-bold mb-0">Comptabilité</p>
+                                </div>
+                                <div class="border-top small-font p-1">
+                                    <small class="d-block">Date de la formation : </small>
+                                    <small>Octobre 2018</small>
+                                </div>
+                                <div class="bg-warning border-top p-1 small-font">
+                                    <small class="color-white">Examen réussi</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 px-0">
+                    <div class="box-button-plus d-flex flex-column align-items-center justify-content-center">
+                        <a href="dashboard-student-detail.html" class="btn btn-plus"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                        <div class="small-font text-bot-btn mt-1">
+                            <small class="color-link d-block">Ajouter une Formation</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-7 pr-0">
+                    <div class="row mx-min5">
+                        <div class="col-md-4 offset-md-4 pd-x-5">
+                            <a href="dashboard-student-detail.html" class="btn-se text-uppercase d-block small-font text-center mt-2"><small>se reinscrire</small></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dash-carousel pt-5 position-relative">
+            <div class="row align-items-center mb-4">
+                <div class="col-md-6">
+                    <p class="text-bold mb-0">Les dernières news du GPRH</p>
+                </div>
+                <div class="col-md-6 d-flex justify-content-end">
+                    <button type="button" id="btn_prev" class="btn mr-2 bg-transparent"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+                    <button type="button" id="btn_next" class="btn bg-transparent"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                </div>
+            </div>
+            <div class="owl-carousel owl-theme">
+                <div class="dash-item">
+                    <img src="images/dash-1.png" alt="" class="img-fluid">
+                    <div class="box-des bg-white">
+                        <p class="text-bold mb-2">Dolore magna aliqua</p>
+                        <p class="des mb-3">Lorem ipsum dolor sit amet elit turpis, consectetur adipiscing.</p>
+                        <p class="times-des"><i class="fa fa-clock-o" aria-hidden="true"></i> 2m ago</p>
+                    </div>
+                </div>
+                <div class="dash-item">
+                    <img src="images/dash-2.png" alt="" class="img-fluid">
+                    <div class="box-des bg-white">
+                        <p class="text-bold mb-2">Morbi elefend a libero</p>
+                        <p class="des mb-3">Lorem ipsum dolor sit amet elit turpis, consectetur adipiscing.</p>
+                        <p class="times-des"><i class="fa fa-clock-o" aria-hidden="true"></i> 1h ago</p>
+                    </div>
+                </div>
+                <div class="dash-item">
+                    <img src="images/dash-3.png" alt="" class="img-fluid">
+                    <div class="box-des bg-white">
+                        <p class="text-bold mb-2">Morbi elefend a libero</p>
+                        <p class="des mb-3">Lorem ipsum dolor sit amet elit turpis, consectetur adipiscing.</p>
+                        <p class="times-des"><i class="fa fa-clock-o" aria-hidden="true"></i> 3h ago</p>
+                    </div>
+                </div>
+                <div class="dash-item">
+                    <img src="images/dash-2.png" alt="" class="img-fluid">
+                    <div class="box-des bg-white">
+                        <p class="text-bold mb-2">Morbi elefend a libero</p>
+                        <p class="des mb-3">Lorem ipsum dolor sit amet elit turpis, consectetur adipiscing.</p>
+                        <p class="times-des"><i class="fa fa-clock-o" aria-hidden="true"></i> 1h ago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="footer-logo text-uppercase">gprh</div>
+                </div>
+                <div class="col-md-5">
+                    <div class="footer-menu d-flex">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Discovery</a></li>
+                            <li><a href="">Photo</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Help</a></li>
+                            <li><a href="">Terms</a></li>
+                            <li><a href="">Guidelines</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">Testimonials</a></li>
+                            <li><a href="">Advertise</a></li>
+                            <li><a href="">Integrations</a></li>
+                            <li><a href="">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 pr-0">
+                    <div class="footer-newsletter">
+                        <form action="" class="position-relative">
+                            <input type="email" class="form-control">
+                            <button type="submit" class="btn icon-input"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                        </form>
+                        <p>Stay in touch with us for the freshest products!</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-menu footer-socmed">
+                        <ul>
+                            <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-globe" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/src/js/jquery.min.js"></script>
+    <script src="assets/src/js/jquery-match-height.js"></script>
+    <script src="assets/src/js/owl.carousel.min.js"></script>
+    <script src="assets/dist/js/script.js"></script>
+
+    <script>
+        $('.dash-carousel .owl-carousel').owlCarousel({
+            loop:true,
+            nav:false,
+            dots:false,
+            margin:30,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:2
+                },
+                1000:{
+                    items:3
+                }
+            }
+        })
+
+        var owl = $('.owl-carousel');
+        owl.owlCarousel();
+        // Go to the next item
+        $('#btn_next').click(function() {
+            owl.trigger('next.owl.carousel');
+        })
+        // Go to the previous item
+        $('#btn_prev').click(function() {
+            // With optional speed parameter
+            // Parameters has to be in square bracket '[]'
+            owl.trigger('prev.owl.carousel', [300]);
+        })
+
+        $(document).ready(function() {
+            // GLOBAL FOR HEADER POPUP ACCOUNT
+            $('#btn_head_pic').click(function() {
+                var header_pic_height = $('#header_pic').outerHeight();
+                var header_pic_top = parseInt(header_pic_height) + parseInt(20);
+                $('#popup_account').css('top', header_pic_top);
+
+                $('#popup_account').toggleClass('show');
+            })
+        });
+    </script>
+</body>
+</html>

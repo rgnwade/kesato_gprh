@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/dist/css/apps.min.css">
+</head>
+<body class="light">
+    <header class="header">
+        <div class="row align-items-center">
+            <div class="col-md-2">
+                <a href="index.html" class="header-logo text-uppercase">gprh</a>
+            </div>
+            <div class="col-md-8">
+                <div class="header-menu">
+                    <ul class="d-flex justify-content-center">
+                        <li><a href="dashboard.html">tableau de bord</a></li>
+                        <li><a href="">gérer mes établissements</a></li>
+                        <li><a href="dashboard-factures.html">gérer mes factures</a></li>
+                        <li><a href="">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="header-pic text-right">
+                    <img src="images/image.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-content container">
+        <div class="row m-0">
+            <div id="box_lay_6" class="col-md-6 offset-md-3 p-0">
+                <!-----------------------------------------------------
+                ---------------------------------------FORM Coordonnées
+                ------------------------------------------------------>
+                <!-- Main Form -->
+                <div id="box_main_form" class="box-form with-shadow">
+                    <div class="bg-white box-pdd box-border">
+                        <h2 class="form-title text-center">Ajout d'un établissement</h2>
+                        <div class="position-relative text-center">
+                            <ul class="bar-progress">
+                                <li class="active">
+                                    <div class="icon"><i class="fa fa-user-o" aria-hidden="true"></i></div>
+                                    <p>Coordonnées</p>
+                                </li>  
+                                <li>
+                                    <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                                    <p>Contact</p>
+                                </li> 
+                                <li>
+                                    <div class="icon"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></div>
+                                    <p>Information</p>
+                                </li>
+                                <li>
+                                    <div class="icon"><i class="fa fa-eye" aria-hidden="true"></i></div>
+                                    <p>Récapitulatif</p>
+                                </li> 
+                                <li>
+                                    <div class="icon"><i class="fa fa-cart-plus" aria-hidden="true"></i></div>
+                                    <p>Cotisation</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <form action="" method="post" class="my-form box-form-pdd">
+                            <div class="form-group">
+                                <label class="text-bold">Type d'établissement</label>
+                                <div class="d-flex">
+                                    <div class="radio-custom text-right mr-3">
+                                        <input type="radio" name="radio-group" id="resto">
+                                        <label for="resto">Restaurant</label>
+                                    </div>
+                                    <div class="radio-custom text-right mr-3">
+                                        <input type="radio" name="radio-group" id="cafe">
+                                        <label for="cafe">Café</label>
+                                    </div>
+                                    <div class="radio-custom text-right">
+                                        <input type="radio" name="radio-group" id="hotel">
+                                        <label for="hotel">Hôtel</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group in-group">
+                                <label class="text-bold">Coordonnées de l'établissment</label>
+                                <input type="text" class="form-control" placeholder="Raison sociale">
+                                <input type="text" class="form-control" placeholder="Nom de la société">
+                                <input type="text" class="form-control" placeholder="Compléments d'adresse">
+                                <input type="text" class="form-control" placeholder="Nom de la rue et numéro">
+                                <div class="row mx-min5 mrg-bot-10">
+                                    <div class="col-md-4 pd-x-5">
+                                        <input type="text" class="form-control" placeholder="N Postal">
+                                    </div>
+                                    <div class="col-md-8 pd-x-5">
+                                        <input type="text" class="form-control" placeholder="Ville">
+                                    </div>
+                                </div>
+                                <div class="custom-select-option position-relative">
+                                    <select name="" id="" class="form-control">
+                                        <option value="">Pays</option>
+                                        <option value="">Pays 2</option>
+                                    </select>
+                                    <div class="arrow-down">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="text-bold">Address de facturation</label>
+                                <div id="radio_addrs" class="dp-none">
+                                    <div class="radio-custom mrg-bot-10">
+                                        <input type="radio" name="radio-group-adrs" id="gerant">
+                                        <label for="gerant">Gérant - Rue du moulin 34 - 1201 Genève</label>
+                                    </div>
+                                    <div class="radio-custom mrg-bot-10">
+                                        <input type="radio" name="radio-group-adrs" id="establissement">
+                                        <label for="establissement">Etablissement - Rue du Victor 32 - 1201 Genève</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-custom">
+                                    <input type="checkbox" id="ajouter">
+                                    <label for="ajouter">Ajouter une nouville address de facturation</label>
+                                </div>
+                            </div>
+                            <div class="box-form-button pt-4 mx-auto text-center d-flex">
+                                <a href="dashboard-ajouter.html" class="btn btn-transaprent-border-purple text-uppercase w-50 mr-2">retour</a>
+                                <button id="btn_next_survant" data-next="0" type="button" class="btn btn-purple text-uppercase w-50">suvant</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- End Main Form -->
+
+                <!-- Form After Click Checkbox-->
+                <div id="box_mes_address" class="box-form with-shadow dp-none">
+                    <div class="bg-white box-pdd box-border py-5">
+                        <h2 class="form-title text-center">Mes addresses de facturation</h2>
+                        <form action="" method="post" class="my-form box-form-pdd mt-4">
+                            <div class="form-group">
+                                <div class="text-center"><label class="text-bold">Mes address existantes</label></div>
+                                <div class="radio-custom mrg-bot-10">
+                                    <input type="radio" name="radio-group-fac" id="facturation">
+                                    <label for="facturation">Gérant - Rue du moulin 34 - 1201 Genève - Suisse</label>
+                                </div>
+                            </div>
+                            <div class="box-form-button pt-4 mx-auto text-center max-w-100">
+                                <button id="mes_addrs_une" type="button" class="btn btn-purple text-uppercase">Créer une nouvelle addresse de facturation</button>
+                                <button id="mes_addrs_cetter" type="button" class="btn btn-purple text-uppercase dp-none">Utilser cette adresse comme adresse de facturation</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- Form After Click Checkbox-->
+
+                <!-- Form New Billing Address-->
+                <div id="box_billing_addrs" class="box-form with-shadow dp-none">
+                    <div class="bg-white box-pdd box-border py-5">
+                        <h2 class="form-title text-center">Ajout d'une adresse de facturation</h2>
+                        <form action="" method="post" class="my-form box-form-pdd">
+                            <div class="form-group in-group">
+                                <input type="text" class="form-control" placeholder="Raison sociale">
+                                <input type="text" class="form-control" placeholder="Nom de la société">
+                                <input type="text" class="form-control" placeholder="Compléments d'adresse">
+                                <input type="text" class="form-control" placeholder="Nom de la rue et numéro">
+                                <div class="row mx-min5 mrg-bot-10">
+                                    <div class="col-md-4 pd-x-5">
+                                        <input type="text" class="form-control" placeholder="N Postal">
+                                    </div>
+                                    <div class="col-md-8 pd-x-5">
+                                        <input type="text" class="form-control" placeholder="Ville">
+                                    </div>
+                                </div>
+                                <div class="custom-select-option position-relative">
+                                    <select name="" id="" class="form-control">
+                                        <option value="">Pays</option>
+                                        <option value="">Pays 2</option>
+                                    </select>
+                                    <div class="arrow-down">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-form-button pt-3 mx-auto text-center d-flex">
+                                <button type="button" class="btn btn-transaprent-border-purple text-uppercase w-50 mr-2">retour</button>
+                                <button id="btn_bill_addrs" type="button" class="btn btn-purple text-uppercase w-50">suvant</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- End Form New Billing Address-->
+
+                <!-- Form After Click Checkbox-->
+                <div id="box_mes_address_last" class="box-form with-shadow dp-none">
+                    <div class="bg-white box-pdd box-border py-5">
+                        <h2 class="form-title text-center">Mes addresses de facturation</h2>
+                        <form action="" method="post" class="my-form box-form-pdd mt-4">
+                            <div class="form-group">
+                                <div class="text-center"><label class="text-bold">Mes address existantes</label></div>
+                                <div class="radio-custom mrg-bot-10">
+                                    <input type="radio" name="radio-group-last" id="g_suisses">
+                                    <label for="g_suisses">Gérant - Rue du moulin 34 - 1201 Genève - Suisse</label>
+                                </div>
+                                <div class="radio-custom mrg-bot-10">
+                                    <input type="radio" name="radio-group-last" id="e_suisses">
+                                    <label for="e_suisses">Etablissement - Rue du Victor 32 - 1201 Genève - Suisses</label>
+                                </div>
+                            </div>
+                            <div class="box-form-button pt-4 mx-auto text-center max-w-100">
+                                <button id="mes_addrs_cetter_last" type="button" class="btn btn-purple text-uppercase">Utilser cette adresse comme adresse de facturation</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- Form After Click Checkbox-->
+                <!-----------------------------------------------------
+                -----------------------------------END FORM Coordonnées
+                ------------------------------------------------------>
+
+                <!-----------------------------------------------------
+                -------------------------------------------FORM CONTACT
+                ------------------------------------------------------>
+                <div id="box_main_form_contact" class="box-form with-shadow dp-none">
+                    <div class="bg-white box-pdd box-border">
+                        <h2 class="form-title text-center">Ajout d'un établissement</h2>
+                        <div class="position-relative text-center">
+                            <ul class="bar-progress">
+                                <li class="active">
+                                    <div class="icon"><i class="fa fa-user-o" aria-hidden="true"></i></div>
+                                    <p>Coordonnées</p>
+                                </li>  
+                                <li class="active">
+                                    <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                                    <p>Contact</p>
+                                </li> 
+                                <li>
+                                    <div class="icon"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></div>
+                                    <p>Information</p>
+                                </li>
+                                <li>
+                                    <div class="icon"><i class="fa fa-eye" aria-hidden="true"></i></div>
+                                    <p>Récapitulatif</p>
+                                </li> 
+                                <li>
+                                    <div class="icon"><i class="fa fa-cart-plus" aria-hidden="true"></i></div>
+                                    <p>Cotisation</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <form action="" method="post" class="my-form box-form-pdd">
+                            <div class="form-group in-group">
+                                <label class="text-bold">Personne de contact dans l'établissement</label>
+                                <div class="d-flex">
+                                    <div class="radio-custom text-right mr-3">
+                                        <input type="radio" name="radio-group" id="madame">
+                                        <label for="madame">Madame</label>
+                                    </div>
+                                    <div class="radio-custom text-right mr-3">
+                                        <input type="radio" name="radio-group" id="monsieur">
+                                        <label for="monsieur">Monsieur</label>
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Nom">
+                                <input type="text" class="form-control" placeholder="Prénom">
+                            </div>
+                            <div class="form-group in-group">
+                                <label class="text-bold">Contact</label>
+                                <input type="text" class="form-control" placeholder="Teléphone fixe">
+                                <input type="text" class="form-control" placeholder="Teléphone mobile">
+                                <input type="email" class="form-control" placeholder="Adresse email">
+                                <div class="checkbox-custom">
+                                    <input type="checkbox" id="remplir">
+                                    <label for="remplir">Remplir avec les coordonnées du gérant</label>
+                                </div>
+                            </div>
+                            <div class="box-form-button pt-4 mx-auto text-center d-flex">
+                                <a href="dashboard-ajouter.html" class="btn btn-transaprent-border-purple text-uppercase w-50 mr-2">retour</a>
+                                <button id="btn_next_contact" data-next="0" type="button" class="btn btn-purple text-uppercase w-50">suvant</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-----------------------------------------------------
+                ---------------------------------------END FORM CONTACT
+                ------------------------------------------------------>
+
+                <!-----------------------------------------------------
+                --------------------------------------FORM INFORMATIONS
+                ------------------------------------------------------>
+                <div id="box_main_form_info" class="box-form with-shadow dp-none">
+                    <div class="bg-white box-pdd box-border">
+                        <h2 class="form-title text-center">Ajout d'un établissement</h2>
+                        <div class="position-relative text-center">
+                            <ul class="bar-progress">
+                                <li class="active">
+                                    <div class="icon"><i class="fa fa-user-o" aria-hidden="true"></i></div>
+                                    <p>Coordonnées</p>
+                                </li>  
+                                <li class="active">
+                                    <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                                    <p>Contact</p>
+                                </li> 
+                                <li class="active">
+                                    <div class="icon"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></div>
+                                    <p>Information</p>
+                                </li>
+                                <li>
+                                    <div class="icon"><i class="fa fa-eye" aria-hidden="true"></i></div>
+                                    <p>Récapitulatif</p>
+                                </li> 
+                                <li>
+                                    <div class="icon"><i class="fa fa-cart-plus" aria-hidden="true"></i></div>
+                                    <p>Cotisation</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <form action="" method="post" class="my-form box-form-pdd">
+                            <div class="form-group in-group">
+                                <label class="text-bold">A quel date souhaité vous que l'adhésion débute?</label>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" placeholder="Jour">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" placeholder="Mois">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" placeholder="Anée">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group in-group">
+                                <label class="text-bold">Merci de télécharger les documents suivants</label>
+                                <p class="mb-1"><small class="mt-0">- Photocopie de la pièce d'identité du Gérant</small></p>
+                                <p><small class="mt-0">- Votre attestation d'exploitation</small></p>
+                                <div class="checkbox-custom">
+                                    <input type="checkbox" id="enverrai">
+                                    <label for="enverrai">Je les enverrai par la suite</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="box-upload">
+                                    <input type="file" name="" multiple="" class="form-control">
+                                </div>
+                            </div>
+                            <div class="box-form-button pt-4 mx-auto text-center d-flex">
+                                <a href="dashboard-ajouter.html" class="btn btn-transaprent-border-purple text-uppercase w-50 mr-2">retour</a>
+                                <button id="btn_next_info" data-next="0" type="button" class="btn btn-purple text-uppercase w-50">suvant</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-----------------------------------------------------
+                ----------------------------------END FORM INFORMATIONS
+                ------------------------------------------------------>
+                
+                <!-----------------------------------------------------
+                ---------------------------------------------FORM RECAP
+                ------------------------------------------------------>
+                <div id="box_main_form_recap" class="box-form with-shadow dp-none">
+                    <div class="bg-white box-pdd box-border">
+                        <h2 class="form-title text-center">Ajout d'un établissement</h2>
+                        <div class="position-relative text-center">
+                            <ul class="bar-progress">
+                                <li class="active">
+                                    <div class="icon"><i class="fa fa-user-o" aria-hidden="true"></i></div>
+                                    <p>Coordonnées</p>
+                                </li>  
+                                <li class="active">
+                                    <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                                    <p>Contact</p>
+                                </li> 
+                                <li class="active">
+                                    <div class="icon"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></div>
+                                    <p>Information</p>
+                                </li>
+                                <li class="active">
+                                    <div class="icon"><i class="fa fa-eye" aria-hidden="true"></i></div>
+                                    <p>Récapitulatif</p>
+                                </li> 
+                                <li>
+                                    <div class="icon"><i class="fa fa-cart-plus" aria-hidden="true"></i></div>
+                                    <p>Cotisation</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <form action="" method="post" class="my-form box-form-pdd">
+                            <p class="text-bold text-center mb-4">Récapitulatif</p>
+                            <div class="form-group">
+                                <label class="text-bold">Type d'établissement</label>
+                                <div class="d-flex">
+                                    <div class="radio-custom text-right mr-3">
+                                        <input type="radio" name="radio-group-recap" id="resto2">
+                                        <label for="resto2">Restaurant</label>
+                                    </div>
+                                    <div class="radio-custom text-right mr-3">
+                                        <input type="radio" name="radio-group-recap" id="cafe2">
+                                        <label for="cafe2">Café</label>
+                                    </div>
+                                    <div class="radio-custom text-right">
+                                        <input type="radio" name="radio-group-recap" id="hotel2">
+                                        <label for="hotel2">Hôtel</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group in-group">
+                                <label class="text-bold">Coordonnées de l'établissment</label>
+                                <div class="row mx-min5 mrg-bot-10">
+                                    <div class="col-md-11 pd-x-5">
+                                        <input type="text" class="form-control" placeholder="Raison sociale">
+                                    </div>
+                                    <div class="col-md-1 pd-x-5 d-flex align-items-center">
+                                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="row mx-min5 mrg-bot-10">
+                                    <div class="col-md-11 pd-x-5">
+                                        <input type="text" class="form-control" placeholder="Nom de la société">
+                                    </div>
+                                    <div class="col-md-1 pd-x-5 d-flex align-items-center">
+                                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="row mx-min5 mrg-bot-10">
+                                    <div class="col-md-11 pd-x-5">
+                                    <input type="text" class="form-control" placeholder="Compléments d'adresse">
+                                    </div>
+                                    <div class="col-md-1 pd-x-5 d-flex align-items-center">
+                                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="row mx-min5 mrg-bot-10">
+                                    <div class="col-md-11 pd-x-5">
+                                        <input type="text" class="form-control" placeholder="Nom de la rue et numéro">
+                                    </div>
+                                    <div class="col-md-1 pd-x-5 d-flex align-items-center">
+                                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="row mx-min5 mrg-bot-10">
+                                    <div class="col-md-11 pd-x-5">
+                                        <div class="row mx-min5 mrg-bot-10">
+                                            <div class="col-md-4 pd-x-5">
+                                                <input type="text" class="form-control" placeholder="N Postal">
+                                            </div>
+                                            <div class="col-md-8 pd-x-5">
+                                                <input type="text" class="form-control" placeholder="Ville">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-1 pd-x-5 d-flex align-items-center">
+                                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="row mx-min5 mrg-bot-10">
+                                    <div class="col-md-11 pd-x-5">
+                                        <div class="custom-select-option position-relative">
+                                            <select name="" id="" class="form-control">
+                                                <option value="">Suisse</option>
+                                                <option value="">Pays 2</option>
+                                            </select>
+                                            <div class="arrow-down">
+                                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="text-bold">Adresse de facturation</label>
+                                <div class="row mx-min5 mrg-bot-10">
+                                    <div class="col-md-11 pd-x-5">
+                                        <div class="radio-custom mb-0">
+                                            <input type="radio" name="recap-adrs" id="gerant2" checked="">
+                                            <label for="gerant2">Gérant - Rue du moulin 34 - 1201 Genève</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-1 pd-x-5 d-flex align-items-center">
+                                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group in-group">
+                                <label class="text-bold">Date du début de l'adhésion</label>
+                                <div class="row mx-min5 mrg-bot-10">
+                                    <div class="col-md-11 pd-x-5">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control" placeholder="Jour">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control" placeholder="Mois">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control" placeholder="Anée">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-1 pd-x-5 d-flex align-items-center">
+                                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group in-group">
+                                <label class="text-bold">Personne de contact dans l'établissement</label>
+                                <div class="d-flex">
+                                    <div class="radio-custom text-right mr-3">
+                                        <input type="radio" name="radio-group" id="madame">
+                                        <label for="madame">Madame</label>
+                                    </div>
+                                    <div class="radio-custom text-right mr-3">
+                                        <input type="radio" name="radio-group" id="monsieur">
+                                        <label for="monsieur">Monsieur</label>
+                                    </div>
+                                </div>
+                                <div class="row mx-min5 mrg-bot-10">
+                                    <div class="col-md-11 pd-x-5">
+                                        <input type="text" class="form-control" placeholder="Nom">
+                                    </div>
+                                    <div class="col-md-1 pd-x-5 d-flex align-items-center">
+                                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="row mx-min5 mrg-bot-10">
+                                    <div class="col-md-11 pd-x-5">
+                                        <input type="text" class="form-control" placeholder="Prénom">
+                                    </div>
+                                    <div class="col-md-1 pd-x-5 d-flex align-items-center">
+                                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group in-group">
+                                <label class="text-bold">Contact</label>
+                                <div class="row mx-min5 mrg-bot-10">
+                                    <div class="col-md-11 pd-x-5">
+                                        <input type="text" class="form-control" placeholder="Teléphone fixe">
+                                    </div>
+                                    <div class="col-md-1 pd-x-5 d-flex align-items-center">
+                                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="row mx-min5 mrg-bot-10">
+                                    <div class="col-md-11 pd-x-5">
+                                        <input type="text" class="form-control" placeholder="Teléphone mobile">
+                                    </div>
+                                    <div class="col-md-1 pd-x-5 d-flex align-items-center">
+                                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="row mx-min5 mrg-bot-10">
+                                    <div class="col-md-11 pd-x-5">
+                                        <input type="email" class="form-control" placeholder="Adresse email">
+                                    </div>
+                                    <div class="col-md-1 pd-x-5 d-flex align-items-center">
+                                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-form-button pt-4 mx-auto text-center d-flex">
+                                <a href="dashboard-ajouter.html" class="btn btn-transaprent-border-purple text-uppercase w-50 mr-2">retour</a>
+                                <button id="btn_next_recap" data-next="0" type="button" class="btn btn-purple text-uppercase w-50">suvant</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                 <!-- Form Cotisation Confirm-->
+                <div id="box_recap_conf" class="box-form with-shadow dp-none">
+                    <div class="bg-white box-pdd box-border py-5">
+                        <h2 class="form-title text-center">Ajout d'un établissement</h2>
+                        <div class="box-form-pdd">
+                            <div class="text-center mt-6"><label class="text-bold">Souhaite vous ajouter un établissement supplémentaires?</label></div>
+                            <div class="box-form-button pt-4 mx-auto text-center d-flex">
+                                <a href="dashboard-ajouter.html" class="btn btn-purple text-uppercase w-50 mr-2">oui</a>
+                                <button id="btn_next_recap_conf" data-next="0" type="button" class="btn btn-purple text-uppercase w-50">non</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Form Cotisation Confirm-->
+                <!-----------------------------------------------------
+                -----------------------------------------END FORM RECAP
+                ------------------------------------------------------>
+            </div>
+
+            <!-----------------------------------------------------
+            ----------------------------------------FORM COTISATION
+            ------------------------------------------------------>
+            <div id="box_cotisation_panier" class="col-md-10 offset-md-1 dp-none">
+                <div class="box-form with-shadow">
+                    <div class="bg-white box-pdd box-border">
+                        <h2 class="form-title text-center">Ajout d'un établissement</h2>
+                        <div class="position-relative text-center">
+                            <ul class="bar-progress">
+                                <li class="active">
+                                    <div class="icon"><i class="fa fa-user-o" aria-hidden="true"></i></div>
+                                    <p>Coordonnées</p>
+                                </li>  
+                                <li class="active">
+                                    <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                                    <p>Contact</p>
+                                </li> 
+                                <li class="active">
+                                    <div class="icon"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></div>
+                                    <p>Information</p>
+                                </li>
+                                <li class="active">
+                                    <div class="icon"><i class="fa fa-eye" aria-hidden="true"></i></div>
+                                    <p>Récapitulatif</p>
+                                </li> 
+                                <li class="active">
+                                    <div class="icon"><i class="fa fa-cart-plus" aria-hidden="true"></i></div>
+                                    <p>Cotisation</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="my-form box-form-pdd w-90">
+                            <h3 class="form-sub-title">Votre panier</h3>
+                            <div class="box-table-cart">
+                                <div class="box-cart-head">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <small>Produits</small>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <small>Quantité</small>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <small>Prix unitaire</small>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <small>Prix unitaire</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-cart-row bg-superlight-grey">
+                                     <div class="row align-items-center">
+                                        <div class="col-md-5">
+                                            <div class="img-and-des d-flex align-items-center">
+                                                <div class="thumb-cart"></div>
+                                                <div class="text-body ml-2">
+                                                    <h3 class="text-bold">Frais d'inscription</h3>
+                                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                    <small>Code produit : XB32442</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <input type="number" class="form-control" value="1">
+                                        </div>
+                                        <div class="col-md-2">
+                                           <input type="text" class="form-control" value="99.00 CHF">
+                                        </div>
+                                        <div class="col-md-2">
+                                           <input type="text" class="form-control" value="99.00 CHF">
+                                        </div>
+                                        <div class="col-md-1 pl-0">
+                                           <button type="button" class="btn bg-transparent p-0"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-cart-row bg-superlight-grey">
+                                     <div class="row align-items-center">
+                                        <div class="col-md-5">
+                                            <div class="img-and-des d-flex align-items-center">
+                                                <div class="thumb-cart"></div>
+                                                <div class="text-body ml-2">
+                                                    <h3 class="text-bold">Cotisation annuelle</h3>
+                                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                    <small>Code produit : XB32443</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <input type="number" class="form-control" value="1">
+                                        </div>
+                                        <div class="col-md-2">
+                                           <input type="text" class="form-control" value="800.00 CHF">
+                                        </div>
+                                        <div class="col-md-2">
+                                           <input type="text" class="form-control" value="800.00 CHF">
+                                        </div>
+                                        <div class="col-md-1 pl-0">
+                                            <button type="button" class="btn bg-transparent p-0"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-cart-summary">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <form action="" method="post" class="form-promotion">
+                                                <div class="position-relative">
+                                                    <input type="text" class="form-control" placeholder="Insérez voutre code promo ici">
+                                                    <button type="submit" class="btn bg-transparent">Appliquer</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="col-md-4">
+                                           <div class="text-right">
+                                                <small class="text-bold d-blovk">Sous-total</small>
+                                                <small class="text-bold text-uppercase d-block">TVA</small>
+                                                <p class="text-bold text-uppercase mt-1 mb-0">total ttc</p>
+                                           </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="text-right">
+                                                <small class="text-bold d-blovk">899.00 CHF</small>
+                                                <small class="text-bold text-uppercase d-block">89.00 CHF</small>
+                                                <p class="text-bold text-uppercase mt-1 mb-0">988.00 CHF</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-cart-footer">
+                                    <div class="checkbox-custom text-center">
+                                        <input type="checkbox" id="ajouter" checked="">
+                                        <label for="ajouter">J'ai lu et j'accepte les conditions générales du GPRH</label>
+                                    </div>
+                                    <div class="box-form-button pt-4 mx-auto text-center">
+                                        <button id="btn_next_cotisation" data-next="0" type="button" class="btn btn-purple text-uppercase w-50">valider mon inscription</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-----------------------------------------------------
+            ------------------------------------END FORM COTISATION
+            ------------------------------------------------------>
+            
+            <!-----------------------------------------------------
+            ---------------------------------------------------LAST
+            ------------------------------------------------------>
+            <div class="col-md-6 offset-md-3 p-0">
+                <div id="box_termine" class="box-form with-shadow dp-none">
+                    <div class="bg-white box-pdd box-border py-5">
+                        <h2 class="form-title text-center">Terminé</h2>
+                        <div class="text-center mt-6">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dapibus tortor nisl, sit amet ultrices ligula scelerisque at.</p>
+                            <p>Cras pellentesque accumsan diam eu gravida. Nunc suscipit felis augue, sed tempor massa placerat a. Aliquam quam mauris, venenatis non risus quis, interdum feugiat neque.</p>
+                            <p>Phasellus eu ligula id urna congue posuere iaculis ac eros. Nulla condimentum lacus ut purus pellentesque faucibus. Aliquam lacinia lacus elit, dictum convallis diam rutrum vitae.</p>
+                        </div>
+                        <div class="box-form-button pt-4 mx-auto text-center d-flex">
+                            <a href="dashboard.html" class="btn mx-auto btn-purple text-uppercase w-50">oui</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-----------------------------------------------------
+            -----------------------------------------------END LAST
+            ------------------------------------------------------>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="footer-logo text-uppercase">gprh</div>
+                </div>
+                <div class="col-md-5">
+                    <div class="footer-menu d-flex">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Discovery</a></li>
+                            <li><a href="">Photo</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Help</a></li>
+                            <li><a href="">Terms</a></li>
+                            <li><a href="">Guidelines</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">Testimonials</a></li>
+                            <li><a href="">Advertise</a></li>
+                            <li><a href="">Integrations</a></li>
+                            <li><a href="">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 pr-0">
+                    <div class="footer-newsletter">
+                        <form action="" class="position-relative">
+                            <input type="email" class="form-control">
+                            <button type="submit" class="btn icon-input"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                        </form>
+                        <p>Stay in touch with us for the freshest products!</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-menu footer-socmed">
+                        <ul>
+                            <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-globe" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/src/js/jquery.min.js"></script>
+    <script src="assets/src/js/jquery-match-height.js"></script>
+    <script src="assets/src/js/owl.carousel.min.js"></script>
+    <script src="assets/dist/js/script.js"></script>
+
+    <script>
+        function show_main_form() {
+            $('#radio_addrs').show();
+            $('#radio_addrs #gerant').prop('checked', true);
+            $('#ajouter').prop('checked', false);
+            $('#ajouter').attr("disabled", true);
+            $('#ajouter').next('label').addClass('disable');
+            $('#box_main_form').fadeIn();
+            $('#btn_next_survant').attr('data-next', 1);
+        }
+
+        $(document).ready(function() {
+            $('#ajouter').click(function() {
+                if($(this).is(':checked')) {
+                    $('#box_main_form').fadeOut(function() {
+                        $('#box_mes_address').fadeIn();
+                    });
+                }
+            });
+
+            $('#facturation').click(function(e) {
+                if($(this).is(':checked')) {
+                    $('#mes_addrs_une').fadeOut(function() {
+                        e.preventDefault();
+                        $('#mes_addrs_cetter').fadeIn();
+                    });
+                } else {
+                    $(this).prop('checked', false);
+                }
+            });
+
+            $('#mes_addrs_cetter').click(function() {
+                $('#box_mes_address').fadeOut(function() {
+                    show_main_form();
+                });
+            })
+
+            $('#mes_addrs_une').click(function() {
+                $('#box_mes_address').fadeOut(function() {
+                    $('#box_billing_addrs').fadeIn();
+                });
+            });
+
+            $('#btn_bill_addrs').click(function() {
+                $('#box_billing_addrs').fadeOut(function() {
+                    $('#box_mes_address_last').fadeIn();
+                });
+            });
+
+            $('#mes_addrs_cetter_last').click(function() {
+                $('#box_mes_address_last').fadeOut(function() {
+                    show_main_form();
+                });
+            });
+
+            $('#btn_next_survant').click(function() {
+                var check_click = $(this).attr('data-next');
+
+                if (check_click == 0) {
+                    show_main_form();
+                } else {
+                    $('#box_main_form').fadeOut(function() {
+                        $('#box_main_form_contact').fadeIn();
+                    });
+                }
+            });
+
+            $('#btn_next_contact').click(function() {
+                $('#box_main_form_contact').fadeOut(function() {
+                    $('#box_main_form_info').fadeIn();
+                });
+            });
+
+            $('#btn_next_info').click(function() {
+                $('#box_main_form_info').fadeOut(function() {
+                    $('#box_main_form_recap').fadeIn();
+                });
+            })
+
+            $('#btn_next_recap').click(function() {
+                $('#box_main_form_recap').fadeOut(function() {
+                    $('#box_recap_conf').fadeIn();
+                });
+            })
+
+            $('#btn_next_recap_conf').click(function() {
+                $('#box_lay_6').fadeOut(function() {
+                    $('#box_cotisation_panier').fadeIn();
+                });
+            })
+
+            $('#btn_next_cotisation').click(function() {
+                $('#box_cotisation_panier').fadeOut(function() {
+                    $('#box_termine').fadeIn();
+                });
+            })
+        });
+    </script>
+</body>
+</html>

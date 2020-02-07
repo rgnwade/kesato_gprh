@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/dist/css/apps.min.css">
+</head>
+<body class="light">
+    <header class="header">
+        <div class="row align-items-center">
+            <div class="col-md-2">
+                <a href="index.html" class="header-logo text-uppercase">gprh</a>
+            </div>
+            <div class="col-md-8">
+                <div class="header-menu">
+                    <ul class="d-flex justify-content-center">
+                        <li><a href="dashboard.html">tableau de bord</a></li>
+                        <li><a href="">gérer mes établissements</a></li>
+                        <li><a href="dashboard-factures.html">gérer mes factures</a></li>
+                        <li><a href="">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="header-pic text-right">
+                    <img src="images/image.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-----------------------------------------------------
+    ------------------------------------------------LISTING
+    ------------------------------------------------------>
+    <section id="hide_me" class="section-content container">
+        <h2 class="head-title text-uppercase">gestion de la facturation</h2>
+        <div class="box-listing">
+            <div class="text-with-search d-flex justify-content-between align-items-center">
+                <h3 class="text-title mb-0 text-uppercase"><span class="text-uppercase">voir les factures</span> <i class="fa fa-angle-right" aria-hidden="true"></i></h3>
+            </div>
+            <div class="listing-filter">
+                <div class="row align-items-center">
+                    <div class="col-md-9">
+                        <button type="button" class="btn btn-status btn-transaprent-border-purple text-uppercase mr-2">tous</button>
+                        <button type="button" class="btn btn-status bg-stabilo mr-2">Payé</button>
+                        <button type="button" class="btn btn-status bg-warning mr-2">En Attente</button>
+                        <button type="button" class="btn btn-status bg-red">En retard</button>
+                    </div>
+                    <div class="col-md-3">
+                        <form action="" method="post" class="my-form form-search-listing">
+                            <div class="position-relative">
+                                <input type="text" name="" id="" class="form-control" placeholder="Rechercher par nom">
+                                <button type="submit" class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="listing-table">
+                <div class="listing-head pr-0">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <span>No de members <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                        </div>
+                        <div class="col-md-2 pl-0">
+                            <span>Nom de l'établissement <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                        </div>
+                        <div class="col-md-2">
+                            <span>Date de la facture <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                        </div>
+                        <div class="col-md-2">
+                            <span>Date d'échéance <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                        </div>
+                        <div class="col-md-2">
+                            <span>Date de paiement <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                        </div>
+                        <div class="col-md-2 pl-0">
+                            <div class="row">
+                                <div class="col-md-6 text-right pr-0">
+                                    <span class="border-r pr-2">Statut <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="listing-row pr-0">
+                    <div class="row align-items-center">
+                        <div class="col-md-2">
+                            <span>0001</span>
+                        </div>
+                        <div class="col-md-2 pl-0">
+                            <span>Café d'italie</span>
+                        </div>
+                        <div class="col-md-2">
+                            <span>15.01.2018</span>
+                        </div>
+                        <div class="col-md-2">
+                            <span>15.01.2018</span>
+                        </div>
+                        <div class="col-md-2">
+                            <span>10.03.2018</span>
+                        </div>
+                        <div class="col-md-2 pl-0">
+                            <div class="row mx-0">
+                                <div class="col-md-6 px-0">
+                                    <button type="button" class="btn bg-red">En retard</button>
+                                </div>
+                                <div class="col-md-6 px-0">
+                                    <div class="row align-items-center mx-0 button-icon">
+                                        <div class="col-md-6 px-0">
+                                            <button type="button" class="btn bg-transparent w-100 border-r color-black open-detail-eye"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                        </div>
+                                        <div class="col-md-6 px-0">
+                                            <button type="button" class="btn bg-transparent w-100 color-black btn-coin" data-toggle="modal" data-target="#coin_modal"><i class="fa fa-database" aria-hidden="true"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="listing-row pr-0">
+                    <div class="row align-items-center">
+                        <div class="col-md-2">
+                            <span>0002</span>
+                        </div>
+                        <div class="col-md-2 pl-0">
+                            <span>Café de Suisse</span>
+                        </div>
+                        <div class="col-md-2">
+                            <span>24.07.2018</span>
+                        </div>
+                        <div class="col-md-2">
+                            <span>24.07.2018</span>
+                        </div>
+                        <div class="col-md-2">
+                            <span>24.07.2018</span>
+                        </div>
+                        <div class="col-md-2 pl-0">
+                            <div class="row mx-0">
+                                <div class="col-md-6 px-0">
+                                    <button type="button" class="btn bg-stabilo">Payé</button>
+                                </div>
+                                <div class="col-md-6 px-0">
+                                    <div class="row align-items-center mx-0 button-icon">
+                                        <div class="col-md-6 px-0">
+                                            <button type="button" class="btn bg-transparent w-100 border-r color-black open-detail-eye"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                        </div>
+                                        <div class="col-md-6 px-0">
+                                            <button type="button" class="btn bg-transparent w-100 disable" disable=""><i class="fa fa-database" aria-hidden="true"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="listing-row pr-0">
+                    <div class="row align-items-center">
+                        <div class="col-md-2">
+                            <span>0003</span>
+                        </div>
+                        <div class="col-md-2 pl-0">
+                            <span>Café d'Espagne</span>
+                        </div>
+                        <div class="col-md-2">
+                            <span>21.06.2018</span>
+                        </div>
+                        <div class="col-md-2">
+                            <span>24.07.2018</span>
+                        </div>
+                        <div class="col-md-2">
+                            <span>24.07.2018</span>
+                        </div>
+                        <div class="col-md-2 pl-0">
+                            <div class="row mx-0">
+                                <div class="col-md-6 px-0">
+                                    <button type="button" class="btn bg-stabilo">Payé</button>
+                                </div>
+                                <div class="col-md-6 px-0">
+                                    <div class="row align-items-center mx-0 button-icon">
+                                        <div class="col-md-6 px-0">
+                                            <button type="button" class="btn bg-transparent w-100 border-r color-black open-detail-eye"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                        </div>
+                                        <div class="col-md-6 px-0">
+                                            <button type="button" class="btn bg-transparent w-100 disable" disable=""><i class="fa fa-database" aria-hidden="true"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-form-button my-form pt-5 text-center d-flex justify-content-end w-100 mw-100">
+                <a href="office-admin.html" class="btn btn-transaprent-border-purple text-uppercase px-5">retour</a>
+            </div>
+        </div>
+    </section>
+    <!-----------------------------------------------------
+    --------------------------------------------END LISTING
+    ------------------------------------------------------>
+
+    <!-----------------------------------------------------
+    ---------------------------------------------POP UP EYE
+    ------------------------------------------------------>
+    <section id="section_eye_detail" class="section-content container dp-none">
+        <div class="row m-0">
+            <div class="col-md-10 offset-md-1">
+                <div class="box-form with-shadow">
+                    <div class="bg-white box-pdd box-border">
+                        <h2 class="form-title text-center">Cotisation Membre</h2>
+                        <div class="my-form box-form-pdd w-90">
+                            <div class="box-table-cart">
+                                <div class="box-cart-head">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <small>Produits</small>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <small>Quantité</small>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <small>Prix unitaire</small>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <small>Prix unitaire</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-cart-row bg-superlight-grey">
+                                     <div class="row align-items-center">
+                                        <div class="col-md-5">
+                                            <div class="img-and-des d-flex align-items-center">
+                                                <div class="thumb-cart"></div>
+                                                <div class="text-body ml-2">
+                                                    <h3 class="text-bold">Frais d'inscription</h3>
+                                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                    <small>Code produit : XB32442</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <input type="number" class="form-control" value="1">
+                                        </div>
+                                        <div class="col-md-2 d-flex align-items-center pr-0">
+                                           <input type="text" class="form-control" value="99.00 CHF">
+                                           <button type="button" class="btn bg-transparent p-0 ml-1">
+                                           <i class="fa fa-pencil" aria-hidden="true"></i></button>
+                                        </div>
+                                        <div class="col-md-2">
+                                           <input type="text" class="form-control" value="99.00 CHF">
+                                        </div>
+                                        <div class="col-md-1 pl-0">
+                                           <button type="button" class="btn bg-transparent p-0"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-cart-row bg-superlight-grey">
+                                     <div class="row align-items-center">
+                                        <div class="col-md-5">
+                                            <div class="img-and-des d-flex align-items-center">
+                                                <div class="thumb-cart"></div>
+                                                <div class="text-body ml-2">
+                                                    <h3 class="text-bold">Cotisation annuelle</h3>
+                                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                    <small>Code produit : XB32443</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <input type="number" class="form-control" value="1">
+                                        </div>
+                                        <div class="col-md-2 d-flex align-items-center pr-0">
+                                           <input type="text" class="form-control" value="800.00 CHF">
+                                           <button type="button" class="btn bg-transparent p-0 ml-1">
+                                           <i class="fa fa-pencil" aria-hidden="true"></i></button>
+                                        </div>
+                                        <div class="col-md-2">
+                                           <input type="text" class="form-control" value="800.00 CHF">
+                                        </div>
+                                        <div class="col-md-1 pl-0">
+                                            <button type="button" class="btn bg-transparent p-0"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-cart-summary">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <form action="" method="post" class="form-promotion">
+                                                <div class="position-relative">
+                                                    <input type="text" class="form-control" placeholder="Insérez voutre code promo ici">
+                                                    <button type="submit" class="btn bg-transparent">Appliquer</button>
+                                                </div>
+                                            </form>
+                                            <div class="mt-4">
+                                                <small class="text-bold">Besoin d'aide?</small>
+                                                <small class="text-bold d-block">+41 22 300 00 01</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                           <div class="text-right">
+                                                <small class="text-bold d-blovk">Sous-total</small>
+                                                <small class="text-bold text-uppercase d-block">TVA</small>
+                                                <p class="text-bold text-uppercase mt-1 mb-0">total ttc</p>
+                                           </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="text-right">
+                                                <small class="text-bold d-blovk">899.00 CHF</small>
+                                                <small class="text-bold text-uppercase d-block">89.00 CHF</small>
+                                                <p class="text-bold text-uppercase mt-1 mb-0">988.00 CHF</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-cart-footer">
+                                     <div class="box-form-button d-flex mx-auto mb-5 text-center">
+                                        <button type="button" data-toggle="modal" data-target="#eye_modal" class="btn btn-purple text-uppercase w-50 mr-3">voir la facture</button>
+                                        <button type="button" class="btn btn-purple text-uppercase w-50">renvoyer la facture par email</button>
+                                    </div>
+                                    
+                                    <div class="box-form-button pt-4 mx-auto text-center d-flex justify-content-center">
+                                        <a href="office-admin-voir.html" class="btn btn-transaprent-border-purple text-uppercase px-5 mr-2">retour</a>
+                                        <a href="office-admin-voir.html" class="btn btn-purple text-uppercase w-50">enresgiter</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL -->
+        <div class="modal fade" id="eye_modal" tabindex="-1" role="dialog" aria-labelledby="eye_modalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="popup-factures">
+                    <div class="d-flex">
+                        <div class="box-left same-height">
+                            <div class="big-icon text-center">
+                                <i class="fa fa-print" aria-hidden="true"></i>
+                            </div>
+                            <div class="big-icon text-center">
+                                <i class="fa fa-download" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="box-right same-height">
+                            <div class="bg-white right-pdd py-80">
+                                <h2 class="head-title text-uppercase">factures-pro</h2>
+                                <div class="current-idenity">
+                                    <div class="row">
+                                        <div class="col-md-7">
+                                            <p class="title text-bold">John Doe</p>
+                                            <div class="row">
+                                                <div class="col-md-4 pr-0">
+                                                    <p>Date</p>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <p>: 10 Janvier 2018</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4 pr-0">
+                                                    <p>Facture n<sup>o</sup></p>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <p>: 123456</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="text-right">
+                                                <p>John Doe</p>
+                                                <p>Address</p>
+                                                <p>CP Ville</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="transaction-table">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Destination</th>
+                                                <th scope="col">Prik Unitape</th>
+                                                <th scope="col">quantite</th>
+                                                <th scope="col">total</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><span class="text-bold">Entrées</span></td>
+                                                <td><span class="text-bold">2.00 <i class="fa fa-eur" aria-hidden="true"></i></span></td>
+                                                <td><span class="text-bold">100</span></td>
+                                                <td><span class="text-bold color-orange">200.00 <i class="fa fa-eur" aria-hidden="true"></i></span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="text-bold">Plats</span></td>
+                                                <td><span class="text-bold">5.50 <i class="fa fa-eur" aria-hidden="true"></i></span></td>
+                                                <td><span class="text-bold">100</span></td>
+                                                <td><span class="text-bold color-orange">550.00 <i class="fa fa-eur" aria-hidden="true"></i></span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="bg-cream right-pdd pb-50">
+                                <div class="transaction-table summary-table">
+                                    <table class="table table-hover mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">AWB</th>
+                                                <th scope="col">A Reguer avant le</th>
+                                                <th scope="col">total</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="row">
+                                                        <div class="col-md-3"><span class="text-bold">BAN</span></div>
+                                                        <div class="col-md-9"><span class="text-bold">: 123 456 789</span></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-3"><span class="text-bold">BIC</span></div>
+                                                        <div class="col-md-9"><span class="text-bold">: 01 02 03</span></div>
+                                                    </div>
+                                                </td>
+                                                <td><span class="text-bold big-font">9 Fev. 18</span></td>
+                                                <td><span class="text-bold bold-font color-orange">750.00 <i class="fa fa-eur" aria-hidden="true"></i></span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="foot-print text-right">
+                                    <ul class="p-0">
+                                        <li><p>contact@factures-pro.com</p></li>
+                                        <li><p>(0361) 987654</p></li>
+                                        <li><a href="" class="pr-0" target="_blank">factures-pro.com</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MODAL -->
+    </section>
+    <!-----------------------------------------------------
+    -----------------------------------------END POP UP EYE
+    ------------------------------------------------------>
+
+    <!-----------------------------------------------------
+    -------------------------------------------SECTION COIN
+    ------------------------------------------------------>
+    <div class="modal fade" id="coin_modal" tabindex="-1" role="dialog" aria-labelledby="coin_modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <section class="section-content">
+                <div class="box-form with-shadow">
+                    <div class="bg-white box-pdd box-border">
+                        <h2 class="form-title text-center font-18">Comptabilisation du paiment</h2>
+                        <form action="" method="post" class="my-form pt-5">
+                            <div class="form-group in-group">
+                                <label class="text-bold d-block text-center">Date du début de l'adhésion</label>
+                                <div class="row mrg-bot-10">
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control" placeholder="Jour">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control" placeholder="Mois">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control" placeholder="Anée">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="text-bold d-block text-center">Type d'établissement</label>
+                                <div class="d-flex justify-content-between">
+                                    <div class="radio-custom text-right mr-3">
+                                        <input type="radio" name="radio-group-recap" id="cash">
+                                        <label for="cash">Cash</label>
+                                    </div>
+                                    <div class="radio-custom text-right mr-3">
+                                        <input type="radio" name="radio-group-recap" id="carte">
+                                        <label for="carte">Carte de crédit</label>
+                                    </div>
+                                    <div class="radio-custom text-right">
+                                        <input type="radio" name="radio-group-recap" id="virement">
+                                        <label for="virement">Virement</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-form-button pt-4 mx-auto text-center d-flex">
+                                <a href="office-admin-voir.html" class="btn btn-transaprent-border-purple text-uppercase w-50 mr-2">retour</a>
+                                <button type="button" class="btn btn-purple text-uppercase w-50">enregister</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-----------------------------------------------------
+    ---------------------------------------END SECTION COIN
+    ------------------------------------------------------>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="footer-logo text-uppercase">gprh</div>
+                </div>
+                <div class="col-md-5">
+                    <div class="footer-menu d-flex">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Discovery</a></li>
+                            <li><a href="">Photo</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Help</a></li>
+                            <li><a href="">Terms</a></li>
+                            <li><a href="">Guidelines</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">Testimonials</a></li>
+                            <li><a href="">Advertise</a></li>
+                            <li><a href="">Integrations</a></li>
+                            <li><a href="">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 pr-0">
+                    <div class="footer-newsletter">
+                        <form action="" class="position-relative">
+                            <input type="email" class="form-control">
+                            <button type="submit" class="btn icon-input"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                        </form>
+                        <p>Stay in touch with us for the freshest products!</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-menu footer-socmed">
+                        <ul>
+                            <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-globe" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/src/js/jquery.min.js"></script>
+    <script src="node_modules/bootstrap//dist/js/bootstrap.min.js"></script>
+    <script src="assets/src/js/jquery-match-height.js"></script>
+    <script src="assets/src/js/owl.carousel.min.js"></script>
+    <script src="assets/dist/js/script.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            $('.open-detail-eye').click(function() {
+                $('#hide_me').fadeOut(function() {
+                    $('#section_eye_detail').fadeIn();
+                })
+            })
+        });
+    </script>
+</body>
+</html>

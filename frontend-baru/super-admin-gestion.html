@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/dist/css/apps.min.css">
+</head>
+<body class="light">
+    <header class="header">
+        <div class="row align-items-center">
+            <div class="col-md-2">
+                <a href="index.html" class="header-logo text-uppercase">gprh</a>
+            </div>
+            <div class="col-md-8">
+                <div class="header-menu">
+                    <ul class="d-flex justify-content-center">
+                        <li><a href="dashboard.html">tableau de bord</a></li>
+                        <li><a href="">gérer mes établissements</a></li>
+                        <li><a href="dashboard-factures.html">gérer mes factures</a></li>
+                        <li><a href="">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="header-pic text-right">
+                    <img src="images/image.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-----------------------------------------------------
+    ------------------------------------------------LISTING
+    ------------------------------------------------------>
+    <section id="box_listing" class="section-content container px-6">
+        <h2 class="head-title text-uppercase">Liste de admins</h2>
+        <div class="box-listing">
+            <div id="listing_">
+                <div class="text-with-search d-flex justify-content-between align-items-center">
+                    <h3 class="text-title mb-0 text-uppercase"><span class="text-uppercase">Liste de admins</span> <i class="fa fa-angle-right" aria-hidden="true"></i></h3>
+                </div>
+                <div class="listing-table">
+                    <div class="text-right mb-2"><button type="button" class="btn bg-transparent color-link">Export en CSV</button></div>
+                    <div class="listing-head">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <span>No de members <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                            </div>
+                            <div class="col-md-6">
+                                <span>ADMIN <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                            </div>
+                            <div class="col-md-2">
+                                <span>Type <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                            </div>
+                            <div class="col-md-2 text-right">
+                                <span>Statut <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listing-row">
+                        <div class="row align-items-center">
+                            <div class="col-md-2">
+                                <span class="color-link">14563</span>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="color-link">Mary Poppins</span>
+                            </div>
+                            <div class="col-md-2">
+                                <span class="text-uppercase">admin</span>
+                            </div>
+                            <div class="col-md-2 text-right">
+                                <button type="button" class="btn bg-stabilo">Actif</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listing-row">
+                        <div class="row align-items-center">
+                            <div class="col-md-2">
+                                <span class="color-link">14563</span>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="color-link">Mary Poppins</span>
+                            </div>
+                            <div class="col-md-2">
+                                <span class="text-uppercase">super admin</span>
+                            </div>
+                            <div class="col-md-2 text-right">
+                                <button type="button" class="btn bg-stabilo">Actif</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-form-button my-form pt-5 text-center d-flex justify-content-end w-100 mw-100">
+                    <button id="btn_to_creation" type="button" class="btn btn-purple text-uppercase px-5 mr-3">creer un nouvel utilisateur</button>
+                    <a href="super-admin.html" class="btn btn-transaprent-border-purple text-uppercase px-5">retour</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-----------------------------------------------------
+    --------------------------------------------END LISTING
+    ------------------------------------------------------>
+
+    <!-----------------------------------------------------
+    -----------------------------Création d'un compte Admin
+    ------------------------------------------------------>
+    <section id="box_creation" class="section-content container dp-none">
+        <div class="row m-0">
+            <div class="col-md-6 offset-md-3 p-0">
+                <div class="box-form with-shadow">
+                    <div class="bg-white box-pdd box-border">
+                        <h2 class="form-title text-center">Création d'un compte <br>admin</h2>
+                        <form action="" method="post" class="my-form box-form-pdd">
+                            <p class="text-bold text-center mb-4">Choix des droits</p>
+                            <div class="d-flex justify-content-between mb-2">
+                                <div class="radio-custom text-right mr-3">
+                                    <input type="radio" name="radio-group-admin" id="admin">
+                                    <label for="admin">Admin</label>
+                                </div>
+                                <div class="radio-custom text-right">
+                                    <input type="radio" name="radio-group-admin" id="super">
+                                    <label for="super">Super Admin</label>
+                                </div>
+                            </div>
+                            <div class="form-group in-group">
+                                <input type="text" class="form-control" placeholder="Nom">
+                                <input type="text" class="form-control" placeholder="Prénom">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Entrez votre adresse email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Choisissez un mot de passe">
+                                <small class="d-flex align-items-center text-with-icon"><i class="fa fa-info mr-2" aria-hidden="true"></i> Le Mot de passe doit contenir au moins 6 caractèrs</small>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Rèpétes votre mot de passe">
+                            </div>
+                            <div class="box-form-button pt-3 mx-auto">
+                                <button type="button" class="btn btn-purple text-uppercase mb-2 w-100 btn_back_gestion">creer un nouvel utilisateur</button>
+                                <a href="super-admin.html" class="btn btn-transaprent-border-purple text-uppercase w-100 btn_back_gestion">annuler</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-----------------------------------------------------
+    -------------------------END Création d'un compte Admin
+    ------------------------------------------------------>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="footer-logo text-uppercase">gprh</div>
+                </div>
+                <div class="col-md-5">
+                    <div class="footer-menu d-flex">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Discovery</a></li>
+                            <li><a href="">Photo</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Help</a></li>
+                            <li><a href="">Terms</a></li>
+                            <li><a href="">Guidelines</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">Testimonials</a></li>
+                            <li><a href="">Advertise</a></li>
+                            <li><a href="">Integrations</a></li>
+                            <li><a href="">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 pr-0">
+                    <div class="footer-newsletter">
+                        <form action="" class="position-relative">
+                            <input type="email" class="form-control">
+                            <button type="submit" class="btn icon-input"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                        </form>
+                        <p>Stay in touch with us for the freshest products!</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-menu footer-socmed">
+                        <ul>
+                            <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-globe" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/src/js/jquery.min.js"></script>
+    <script src="assets/src/js/jquery-match-height.js"></script>
+    <script src="assets/src/js/owl.carousel.min.js"></script>
+    <script src="assets/dist/js/script.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#btn_to_creation').click(function() {
+                $('#box_listing').fadeOut(function() {
+                    $('#box_creation').fadeIn();
+                })
+            });
+
+            $('.btn_back_gestion').click(function() {
+                $('#box_creation').fadeOut(function() {
+                    $('#box_listing').fadeIn();
+                })
+            });
+        });
+    </script>
+</body>
+</html>

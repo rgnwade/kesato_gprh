@@ -1,0 +1,37 @@
+@mixin font-gotham-book($value: 14px, $color:#333) {
+    font-size: $value;
+    color: $color;
+    font-family:'Gotham Book';
+}
+
+@mixin font-gotham-bookitalic($value: 14px, $color:#333) {
+    font-size: $value;
+    color: $color;
+    font-family:'Gotham Book Italic';
+}
+
+@mixin font-gotham-medium($value: 14px, $color:#333) {
+    font-size: $value;
+    color: $color;
+    font-family:'Gotham Medium';
+}
+
+@mixin font-gotham-bold($value: 14px, $color:#333) {
+    font-size: $value;
+    color: $color;
+    font-family:'Gotham Bold';
+}
+
+@mixin font-gotham-black($value: 14px, $color:#333) {
+    font-size: $value;
+    color: $color;
+    font-family:'Gotham Black';
+}
+
+@mixin absolute-all() {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}

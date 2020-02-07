@@ -1,0 +1,60 @@
+{
+  "appName": "GPRH",
+  "defaultLanguage": "fr",
+  "defaultLocale": "fr-FR",
+  "baseUrl": "http://localhost:3000/",
+  "apiEndPoint": "https://jsonplaceholder.typicode.com/",
+  "apiEndPoint2": "http://localhost:3001/api/",
+  "app": {
+    "env": "production",
+    "name": "GPRH",
+    "tagline": "GPRH Website",
+    "key": "secretkey"
+  },
+  "locale": {
+    "code": "fr-FR",
+    "languageCode": "fr",
+    "language": "Français",
+    "name": "France"
+  },
+  "api": {
+    "endPoint": "https://jsonplaceholder.typicode.com/",
+    "endPoint2": "http://localhost:3001/"
+  },
+  "db": {
+    "host": "localhost",
+    "user": "root",
+    "password": "root",
+    "database": "db_name",
+    "socketPath": "/Applications/MAMP/tmp/mysql/mysql.sock"
+  },
+  "mail": {
+    "smtp": {
+      "host": "smtp.mailtrap.io",
+      "port": 465,
+      "secure": false,
+      "auth": {
+          "user": "89426874abf668",
+          "pass": "3782a8dab4d824"
+      }
+    },
+    "primaryEmail": "info@example.com",
+    "secondaryEmail": "hello@example.com"
+  },
+  "payment":{
+    "development": {
+      "endPoint": "https://apitest.payengine.de/v1/",
+      "merchantId": "merchant_uuuwrzlueg",
+      "secretKey": "HmS2c0Z8FsFF9SxJ",
+      "token": "bWVyY2hhbnRfdXV1d3J6bHVlZzpIbVMyYzBaOEZzRkY5U3hK",
+      "widget": "https://pptest.payengine.de/widgetjs/payengine.widget.min.js"
+    },
+    "production": {
+      "endPoint": "https://apitest.payengine.de/v1/",
+      "merchantId": "merchant_uuuwrzlueg",
+      "secretKey": "HmS2c0Z8FsFF9SxJ",
+      "token": "bWVyY2hhbnRfdXV1d3J6bHVlZzpIbVMyYzBaOEZzRkY5U3hK",
+      "widget": "https://pptest.payengine.de/widgetjs/payengine.widget.min.js"
+    }
+  }
+}

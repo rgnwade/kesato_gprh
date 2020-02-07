@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/dist/css/apps.min.css">
+</head>
+<body class="light">
+    <header class="header">
+        <div class="row align-items-center">
+            <div class="col-md-2">
+                <a href="index.html" class="header-logo text-uppercase">gprh</a>
+            </div>
+            <div class="col-md-8">
+                <div class="header-menu">
+                    <ul class="d-flex justify-content-center">
+                        <li><a href="dashboard.html">tableau de bord</a></li>
+                        <li><a href="">gérer mes établissements</a></li>
+                        <li><a href="dashboard-factures.html">gérer mes factures</a></li>
+                        <li><a href="">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="header-pic text-right">
+                    <img src="images/image.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-content container px-6">
+        <h2 class="head-title text-uppercase">gerer mes etablissements</h2>
+        
+        <div class="box-listing">
+            <!-----------------------------------------------------
+            ------------------------------------------------LISTING
+            ------------------------------------------------------>
+            <div id="listing_">
+                <div class="text-with-search d-flex justify-content-between align-items-center">
+                    <h3 class="text-title mb-0 text-uppercase"><span class="text-uppercase">gerer mes etablissements</span> <i class="fa fa-angle-right" aria-hidden="true"></i></h3>
+                    <form action="" method="post" class="my-form form-search-listing">
+                        <div class="position-relative">
+                            <input type="text" name="" id="" class="form-control" placeholder="Rechercher par nom">
+                            <button type="submit" class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        </div>
+                    </form>
+                </div>
+                <div class="listing-table">
+                    <div class="pl-5">
+                        <div class="listing-head">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <span>No de members <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                                </div>
+                                <div class="col-md-3">
+                                    <span>Nom de l'établissement <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                                </div>
+                                <div class="col-md-3">
+                                    <span>Date d'inscription <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                                </div>
+                                <div class="col-md-2">
+                                    <span>Date d'échéance <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                                </div>
+                                <div class="col-md-2 text-right">
+                                    <span>Statut <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="listing-row">
+                            <div class="row align-items-center">
+                                <div class="col-md-2">
+                                    <span class="color-link">14563</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <span class="color-link">Café d'italie</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <span>15.01.2018</span>
+                                </div>
+                                <div class="col-md-2">
+                                    <span>15.01.2019</span>
+                                </div>
+                                <div class="col-md-2 text-right">
+                                    <button type="button" class="btn bg-stabilo">Validé</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="listing-row">
+                            <div class="row align-items-center">
+                                <div class="col-md-2">
+                                    <span class="color-link">14564</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <span class="color-link">Café de Suisse</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <span>24.07.18</span>
+                                </div>
+                                <div class="col-md-2">
+                                    <span>24.07.2019</span>
+                                </div>
+                                <div class="col-md-2 text-right">
+                                    <button type="button" class="btn bg-warning">En Attente</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="listing-row">
+                            <div class="row align-items-center">
+                                <div class="col-md-2">
+                                    <span class="color-link">14563</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <span class="color-link">Café d'Espagne</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <span>04.03.2015</span>
+                                </div>
+                                <div class="col-md-2">
+                                    <span>04.03.2017</span>
+                                </div>
+                                <div class="col-md-2 text-right">
+                                    <button type="button" class="btn bg-strong-purple">Résillé</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="listing-row">
+                            <div class="row align-items-center">
+                                <div class="col-md-2">
+                                    <span class="color-link">14563</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <span class="color-link">Café de France</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <span>21.06.2018</span>
+                                </div>
+                                <div class="col-md-2">
+                                    <span>-</span>
+                                </div>
+                                <div class="col-md-2 text-right">
+                                    <button type="button" class="btn bg-red">Refusé</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-form-button my-form pt-5 text-center d-flex justify-content-end w-100 mw-100">
+                    <a href="dashboard.html" class="btn btn-transaprent-border-purple text-uppercase mr-3 px-5">retour</a>
+                    <a href="dashboard-ajouter.html" class="btn btn-purple text-uppercase px-5">ajouter un etablissement</a>
+                </div>
+            </div>
+            <!-----------------------------------------------------
+            --------------------------------------------END LISTING
+            ------------------------------------------------------>
+
+            <!-----------------------------------------------------
+            -------------------------------------------------DETAIL
+            ------------------------------------------------------>
+            <div id="detail" class="dp-none">
+                <div class="text-with-search d-flex justify-content-between align-items-center">
+                    <h3 class="text-title mb-0"><span class="text-uppercase">gerer mes etablissements</span> <i class="fa fa-angle-right" aria-hidden="true"></i> <span>Café d'Italie</span></h3>
+                </div>
+                <div class="box-listing-detail">
+                    <form action="" method="post" class="my-form">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="text-bold">Type d'établissement</label>
+                                    <div class="d-flex">
+                                        <div class="radio-custom text-right mr-3">
+                                            <input type="radio" name="radio-group" id="resto" checked="">
+                                            <label for="resto">Restaurant</label>
+                                        </div>
+                                        <div class="radio-custom text-right mr-3">
+                                            <input type="radio" name="radio-group" id="cafe">
+                                            <label for="cafe">Café</label>
+                                        </div>
+                                        <div class="radio-custom text-right">
+                                            <input type="radio" name="radio-group" id="hotel">
+                                            <label for="hotel">Hôtel</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group in-group">
+                                    <label class="text-bold">Coordonnées de l'établissment</label>
+                                    <div class="row mx-min5 mrg-bot-10">
+                                        <div class="col-md-11 pd-x-5">
+                                            <input type="text" class="form-control" placeholder="Raison sociale">
+                                        </div>
+                                        <div class="col-md-1 pd-x-5 d-flex align-items-center">
+                                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <div class="row mx-min5 mrg-bot-10">
+                                        <div class="col-md-11 pd-x-5">
+                                            <input type="text" class="form-control" placeholder="Nom de la société">
+                                        </div>
+                                        <div class="col-md-1 pd-x-5 d-flex align-items-center">
+                                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <div class="row mx-min5 mrg-bot-10">
+                                        <div class="col-md-11 pd-x-5">
+                                        <input type="text" class="form-control" placeholder="Compléments d'adresse">
+                                        </div>
+                                        <div class="col-md-1 pd-x-5 d-flex align-items-center">
+                                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <div class="row mx-min5 mrg-bot-10">
+                                        <div class="col-md-11 pd-x-5">
+                                            <input type="text" class="form-control" placeholder="Nom de la rue et numéro">
+                                        </div>
+                                        <div class="col-md-1 pd-x-5 d-flex align-items-center">
+                                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <div class="row mx-min5 mrg-bot-10">
+                                        <div class="col-md-11 pd-x-5">
+                                            <div class="row mx-min5 mrg-bot-10">
+                                                <div class="col-md-4 pd-x-5">
+                                                    <input type="text" class="form-control" placeholder="N Postal">
+                                                </div>
+                                                <div class="col-md-8 pd-x-5">
+                                                    <input type="text" class="form-control" placeholder="Ville">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-1 pd-x-5 d-flex align-items-center">
+                                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <div class="row mx-min5 mrg-bot-10">
+                                        <div class="col-md-11 pd-x-5">
+                                            <div class="custom-select-option position-relative">
+                                                <select name="" id="" class="form-control">
+                                                    <option value="">Suisse</option>
+                                                    <option value="">Pays 2</option>
+                                                </select>
+                                                <div class="arrow-down">
+                                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="text-bold">Adresse de facturation</label>
+                                    <div class="row mx-min5 mrg-bot-10">
+                                        <div class="col-md-11 pd-x-5">
+                                            <div class="radio-custom mb-0">
+                                                <input type="radio" name="recap-adrs" id="gerant2" checked="">
+                                                <label for="gerant2">Gérant - Rue du moulin 34 - 1201 Genève</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-1 pd-x-5 d-flex align-items-center">
+                                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="text-bold">Documents officels</label>
+                                    <div class="box-upload">
+                                        <input type="file" name="" multiple="" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group in-group">
+                                    <label class="text-bold">Date du début de l'adhésion</label>
+                                    <div class="row mx-min5 mrg-bot-10">
+                                        <div class="col-md-11 pd-x-5">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <input type="text" class="form-control" placeholder="Jour">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <input type="text" class="form-control" placeholder="Mois">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <input type="text" class="form-control" placeholder="Anée">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group in-group">
+                                    <label class="text-bold">Personne de contact dans l'établissement</label>
+                                    <div class="d-flex">
+                                        <div class="radio-custom text-right mr-3">
+                                            <input type="radio" name="radio-group" id="madame">
+                                            <label for="madame">Madame</label>
+                                        </div>
+                                        <div class="radio-custom text-right mr-3">
+                                            <input type="radio" name="radio-group" id="monsieur" checked="">
+                                            <label for="monsieur">Monsieur</label>
+                                        </div>
+                                    </div>
+                                    <div class="row mx-min5 mrg-bot-10">
+                                        <div class="col-md-11 pd-x-5">
+                                            <input type="text" class="form-control" placeholder="Nom">
+                                        </div>
+                                        <div class="col-md-1 pd-x-5 d-flex align-items-center">
+                                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <div class="row mx-min5 mrg-bot-10">
+                                        <div class="col-md-11 pd-x-5">
+                                            <input type="text" class="form-control" placeholder="Prénom">
+                                        </div>
+                                        <div class="col-md-1 pd-x-5 d-flex align-items-center">
+                                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group in-group">
+                                    <label class="text-bold">Contact</label>
+                                    <div class="row mx-min5 mrg-bot-10">
+                                        <div class="col-md-11 pd-x-5">
+                                            <input type="text" class="form-control" placeholder="Teléphone fixe">
+                                        </div>
+                                        <div class="col-md-1 pd-x-5 d-flex align-items-center">
+                                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <div class="row mx-min5 mrg-bot-10">
+                                        <div class="col-md-11 pd-x-5">
+                                            <input type="text" class="form-control" placeholder="Teléphone mobile">
+                                        </div>
+                                        <div class="col-md-1 pd-x-5 d-flex align-items-center">
+                                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <div class="row mx-min5 mrg-bot-10">
+                                        <div class="col-md-11 pd-x-5">
+                                            <input type="email" class="form-control" placeholder="Adresse email">
+                                        </div>
+                                        <div class="col-md-1 pd-x-5 d-flex align-items-center">
+                                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="box-status mx-auto w-70 mb-3">
+                                    <div class="status-head text-center">
+                                        <span>Statut</span>
+                                    </div>
+                                    <div class="status-body">
+                                        <button type="button" class="btn bg-stabilo">Validé</button>
+                                        <div class="status-des">
+                                            <p class="text-bold mb-2">Information</p>
+                                            <ul class="mb-0">
+                                                <li>Lorem ipsum dolor sit amet, consectetur.</li>
+                                                <li>Ut vestibulum ut metus nec dictum.</li>
+                                                <li>Cras nec condimentum enim.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-status mx-auto w-70">
+                                    <div class="status-head text-center">
+                                        <span>Facture</span>
+                                    </div>
+                                    <div class="status-body">
+                                        <button type="button" class="btn bg-stabilo">Payé</button>
+                                        <div class="status-des mt-2">
+                                            <a href="" class="color-link small-font">> voir les factures</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-form-button my-form text-center d-flex justify-content-end w-100 mw-100">
+                            <button type="button" class="btn btn-transaprent-border-purple text-uppercase mr-3 px-5 btn-click-me">retour</button>
+                            <button type="button" class="btn btn-purple text-uppercase px-5 btn-click-me">enregistrer</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-----------------------------------------------------
+            ---------------------------------------------END DETAIL
+            ------------------------------------------------------>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="footer-logo text-uppercase">gprh</div>
+                </div>
+                <div class="col-md-5">
+                    <div class="footer-menu d-flex">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Discovery</a></li>
+                            <li><a href="">Photo</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Help</a></li>
+                            <li><a href="">Terms</a></li>
+                            <li><a href="">Guidelines</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">Testimonials</a></li>
+                            <li><a href="">Advertise</a></li>
+                            <li><a href="">Integrations</a></li>
+                            <li><a href="">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 pr-0">
+                    <div class="footer-newsletter">
+                        <form action="" class="position-relative">
+                            <input type="email" class="form-control">
+                            <button type="submit" class="btn icon-input"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                        </form>
+                        <p>Stay in touch with us for the freshest products!</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-menu footer-socmed">
+                        <ul>
+                            <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-globe" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/src/js/jquery.min.js"></script>
+    <script src="assets/src/js/jquery-match-height.js"></script>
+    <script src="assets/src/js/owl.carousel.min.js"></script>
+    <script src="assets/dist/js/script.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.listing-row button').click(function() {
+                $('#listing_').fadeOut(function() {
+                    $('#detail').fadeIn();
+                })
+            });
+
+            $('.btn-click-me').click(function() {
+                $('#detail').fadeOut(function() {
+                    $('#listing_').fadeIn();
+                })
+            });
+        });
+    </script>
+</body>
+</html>

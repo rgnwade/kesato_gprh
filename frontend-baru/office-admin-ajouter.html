@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/dist/css/apps.min.css">
+</head>
+<body class="light">
+    <header class="header">
+        <div class="row align-items-center">
+            <div class="col-md-2">
+                <a href="index.html" class="header-logo text-uppercase">gprh</a>
+            </div>
+            <div class="col-md-8">
+                <div class="header-menu">
+                    <ul class="d-flex justify-content-center">
+                        <li><a href="dashboard.html">tableau de bord</a></li>
+                        <li><a href="">gérer mes établissements</a></li>
+                        <li><a href="dashboard-factures.html">gérer mes factures</a></li>
+                        <li><a href="">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="header-pic text-right">
+                    <img src="images/image.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-content container">
+        <div class="row m-0">
+            <div class="col-md-6 offset-md-3 p-0">
+                <!-- STEP 1 -->
+                <div id="box_step_1" class="box-form with-shadow">
+                    <div class="bg-white box-pdd box-border">
+                        <h2 class="form-title text-center">Création d'un compte</h2>
+                        <form action="" method="post" class="my-form box-form-pdd">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Entrez votre adresse email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Choisissez un mot de passe">
+                                <small class="d-flex align-items-center text-with-icon"><i class="fa fa-info mr-2" aria-hidden="true"></i> Le Mot de passe doit contenir au moins 6 caractèrs</small>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Rèpétes votre mot de passe">
+                            </div>
+                            <div class="box-form-button pt-3 mx-auto">
+                                <button id="btn_step_1" type="button" class="btn btn-purple text-uppercase w-100 mb-2">créer un compte</button>
+                                <a href="office-admin.html" class="btn btn-transaprent-border-purple text-uppercase w-100">annuler</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- END STEP 1 -->
+
+                <!-- STEP 2 -->
+                <div id="box_step_2" class="box-form with-shadow dp-none">
+                    <div class="bg-white box-pdd box-border">
+                        <h2 class="form-title text-center">Information sur le gérant</h2>
+                        <!-- progressbar -->
+                        <div class="position-relative text-center">
+                            <ul class="box-progress">
+                                <li class="active"></li>  
+                                <li></li> 
+                                <li></li>
+                            </ul>
+                        </div>
+                        <form action="" method="post" class="my-form box-form-pdd">
+                            <div class="d-flex">
+                                <div class="radio-custom text-right mr-3">
+                                    <input type="radio" name="radio-group" id="madame">
+                                    <label for="madame">Madame</label>
+                                </div>
+                                <div class="radio-custom text-right">
+                                    <input type="radio" name="radio-group" id="monsieur">
+                                    <label for="monsieur">Monsieur</label>
+                                </div>
+                            </div>
+                            <div class="form-group in-group">
+                                <input type="text" class="form-control" placeholder="Nom">
+                                <input type="text" class="form-control" placeholder="Prénom">
+                            </div>
+                            <div class="form-group">
+                                <label class="text-bold">Date de naissance</label>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" placeholder="Jour">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" placeholder="Mois">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" placeholder="Anée">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group in-group">
+                                <label class="text-bold">Contact</label>
+                                <input type="text" class="form-control" placeholder="Teléphone fixe">
+                                <input type="text" class="form-control" placeholder="Teléphone mobile">
+                            </div>
+                            <div class="box-form-button pt-3 mx-auto text-center d-flex">
+                                <a href="office-admin.html" class="btn btn-transaprent-border-purple text-uppercase w-50 mr-2">retour</a>
+                                <button id="btn_step_2" type="button" class="btn btn-purple text-uppercase w-50">suvant</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- END STEP 2 -->
+
+                <!-- STEP 3 -->
+                <div id="box_step_3" class="box-form with-shadow dp-none">
+                    <div class="bg-white box-pdd box-border">
+                        <h2 class="form-title text-center">Information sur le gérant</h2>
+                        <!-- progressbar -->
+                        <div class="position-relative text-center">
+                            <ul class="box-progress">
+                                <li class="active"></li>  
+                                <li class="active"></li> 
+                                <li></li>
+                            </ul>
+                        </div>
+                        <form action="" method="post" class="my-form box-form-pdd">
+                            <div class="form-group in-group">
+                                <input type="text" class="form-control" placeholder="Raison sociale">
+                                <input type="text" class="form-control" placeholder="Nom de la société">
+                                <input type="text" class="form-control" placeholder="Compléments d'adresse">
+                                <input type="text" class="form-control" placeholder="Nom de la rue et numéro">
+                                <div class="row mx-min5 mrg-bot-10">
+                                    <div class="col-md-4 pd-x-5">
+                                        <input type="text" class="form-control" placeholder="N Postal">
+                                    </div>
+                                    <div class="col-md-8 pd-x-5">
+                                        <input type="text" class="form-control" placeholder="Ville">
+                                    </div>
+                                </div>
+                                <div class="custom-select-option position-relative">
+                                    <select name="" id="" class="form-control">
+                                        <option value="">Pays</option>
+                                        <option value="">Pays 2</option>
+                                    </select>
+                                    <div class="arrow-down">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-form-button pt-3 mx-auto text-center d-flex">
+                                <a href="office-admin.html" class="btn btn-transaprent-border-purple text-uppercase w-50 mr-2">retour</a>
+                                <button id="btn_step_3" type="button" class="btn btn-purple text-uppercase w-50">suvant</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- END STEP 3 -->
+
+                <!-- STEP 4 -->
+                <div id="box_step_4" class="box-form with-shadow dp-none">
+                    <div class="bg-white box-pdd box-border">
+                        <h2 class="form-title text-center">Information sur le gérant</h2>
+                        <!-- progressbar -->
+                        <div class="position-relative text-center">
+                            <ul class="box-progress">
+                                <li class="active"></li>  
+                                <li class="active"></li> 
+                                <li class="active"></li>
+                            </ul>
+                        </div>
+                        <div class="box-in-form text-center">
+                            <p class="title">Félicition!</p>
+                            <small>Dans quelques instants vouz alles recovoir un email dans votre boite de réception.</small>
+                            <p class="title">
+                                Merci de cliquez sur le lien pour terminer votre inscription et pour ajouter votre ètablissement.
+                            </p>
+                            <div class="box-form-button pt-3 mx-auto">
+                                <a href="office-admin.html" class="btn btn-purple text-uppercase mb-2 w-100">Ajouter mon etablissement</a>
+                                <a href="office-admin.html" class="btn btn-transaprent-border-purple text-uppercase w-100">Retour au back office</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END STEP 4 -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="footer-logo text-uppercase">gprh</div>
+                </div>
+                <div class="col-md-5">
+                    <div class="footer-menu d-flex">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Discovery</a></li>
+                            <li><a href="">Photo</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Help</a></li>
+                            <li><a href="">Terms</a></li>
+                            <li><a href="">Guidelines</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">Testimonials</a></li>
+                            <li><a href="">Advertise</a></li>
+                            <li><a href="">Integrations</a></li>
+                            <li><a href="">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 pr-0">
+                    <div class="footer-newsletter">
+                        <form action="" class="position-relative">
+                            <input type="email" class="form-control">
+                            <button type="submit" class="btn icon-input"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                        </form>
+                        <p>Stay in touch with us for the freshest products!</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-menu footer-socmed">
+                        <ul>
+                            <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-globe" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/src/js/jquery.min.js"></script>
+    <script src="assets/src/js/jquery-match-height.js"></script>
+    <script src="assets/src/js/owl.carousel.min.js"></script>
+    <script src="assets/dist/js/script.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#btn_step_1').click(function() {
+                $('#box_step_1').fadeOut(function() {
+                    $('#box_step_2').fadeIn();
+                });
+            });
+            
+            $('#btn_step_2').click(function() {
+                $('#box_step_2').fadeOut(function() {
+                    $('#box_step_3').fadeIn();
+                });
+            });
+            
+            $('#btn_step_3').click(function() {
+                $('#box_step_3').fadeOut(function() {
+                    $('#box_step_4').fadeIn();
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+After create new establistment
+-------------------------------
+
+Félicitations!
+
+Vous avez ajouté un nouvel établissement.
+
+Le statut de votre établissement sera mis à jour dès que le comité aura étudier votre demande.
+
+En attendant, vous pouvez régler votre cotisation dans l’onglet “Gérer mes factures”
+
+
+Congratulations!
+
+You added a new establishment.
+
+The status of your school will be updated as soon as the committee reviews your application.
+
+In the meantime, you can pay your contribution in the tab "Manage my bills"
+
+====================================================================================================================================
+
+
+
+After register new student
+--------------------------
+
+Merci
+Le paiement à été réalisé avec succés.
+
+Vous trouverez dans votre espace élève la copie de la facture.
+
+
+Thank you
+The payment has been successfully completed.
+
+You will find in your space raises the copy of the invoice.
+
+
+
+====================================================================================================================================
+
+
+Student course card
+-------------------
+
+Terminé
+Prochainement
+
+Examen réussi
+Examen échoué
+Pas commencé
+
+
+Completed
+Shortly
+
+Successful review
+Exam failed
+Not started yet
+
+====================================================================================================================================

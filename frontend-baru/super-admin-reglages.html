@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/dist/css/apps.min.css">
+</head>
+<body class="light">
+    <header class="header">
+        <div class="row align-items-center">
+            <div class="col-md-2">
+                <a href="index.html" class="header-logo text-uppercase">gprh</a>
+            </div>
+            <div class="col-md-8">
+                <div class="header-menu">
+                    <ul class="d-flex justify-content-center">
+                        <li><a href="dashboard.html">tableau de bord</a></li>
+                        <li><a href="">gérer mes établissements</a></li>
+                        <li><a href="dashboard-factures.html">gérer mes factures</a></li>
+                        <li><a href="">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div id="header_pic" class="header-pic text-right position-relative">
+                    <button type="button" id="btn_head_pic" class="btn btn-head-pic"><img src="images/image.png" alt=""></button>
+                    <div id="popup_account" class="popup-detail-account text-left">
+                        <div class="row mx-min5">
+                            <div class="col-md-4 pd-x-5">
+                                <div class="round-img">
+                                    <img src="images/image.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-8 pd-x-5">
+                                <div class="des-info">
+                                    <h3 class="name">Mary Poppins</h3>
+                                    <p class="text-bold">Gérant</p>
+                                    <p>N<sup>o</sup> de membre 20321</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="action-button">
+                            <a href="modifier-profile.html" class="profile-link">Modifier mom profil</a>
+                            <a href="index.html" class="profile-link">Se déconnector</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-content container px-6">
+        <h2 class="head-title text-uppercase">GESTION PRODUIT MEMBRE</h2>
+        <div class="box-listing">
+            <div class="text-with-search d-flex justify-content-between align-items-center">
+                <h3 class="text-title mb-0 text-uppercase"><span>Frais D'Inscription</span> <i class="fa fa-angle-right" aria-hidden="true"></i></h3>
+            </div>
+            <div class="box-listing-detail">
+                <form action="" method="post" class="my-form">
+                    <div class="row mx-min5">
+                        <div class="col-md-4 pd-x-5">
+                            <div class="form-group in-group">
+                                <label class="text-bold">Désignation produit</label>
+                                <input type="text" class="form-control" placeholder="Frais d'inscription">
+                            </div>
+                        </div>
+                        <div class="col-md-8 pd-x-5">
+                            <div class="row mx-min5">
+                                <div class="col-md-4 pd-x-5">
+                                    <div class="form-group in-group">
+                                        <label class="text-bold">Prix normal</label>
+                                        <input type="text" class="form-control" placeholder="CHF 100.00">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 pd-x-5">
+                                    <div class="form-group in-group">
+                                        <label class="text-bold">Prix affiché</label>
+                                        <input type="text" class="form-control" placeholder="CHF 0.00">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 pd-x-5">
+                                    <div class="form-group in-group">
+                                        <label class="text-bold">Statut</label>
+                                        <div class="custom-select-option position-relative">
+                                            <select name="" id="" class="form-control">
+                                                <option value="">Actif</option>
+                                                <option value="">Non Actif</option>
+                                            </select>
+                                            <div class="arrow-down">
+                                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-form-button my-form text-center d-flex justify-content-end w-100 mw-100 mt-4">
+                        <a href="super-admin.html" class="btn btn-purple text-uppercase px-5 mr-3 btn-back-liste">enregistrer</a>
+                        <a href="super-admin.html" class="btn btn-transaprent-border-purple text-uppercase px-5 btn-back-liste">retour</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-----------------------------------------------------
+    ----------------------------------END LISTE DES MEMBRES
+    ------------------------------------------------------>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="footer-logo text-uppercase">gprh</div>
+                </div>
+                <div class="col-md-5">
+                    <div class="footer-menu d-flex">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Discovery</a></li>
+                            <li><a href="">Photo</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Help</a></li>
+                            <li><a href="">Terms</a></li>
+                            <li><a href="">Guidelines</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">Testimonials</a></li>
+                            <li><a href="">Advertise</a></li>
+                            <li><a href="">Integrations</a></li>
+                            <li><a href="">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 pr-0">
+                    <div class="footer-newsletter">
+                        <form action="" class="position-relative">
+                            <input type="email" class="form-control">
+                            <button type="submit" class="btn icon-input"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                        </form>
+                        <p>Stay in touch with us for the freshest products!</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-menu footer-socmed">
+                        <ul>
+                            <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-globe" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/src/js/jquery.min.js"></script>
+    <script src="assets/src/js/jquery-match-height.js"></script>
+    <script src="assets/src/js/owl.carousel.min.js"></script>
+    <script src="assets/dist/js/script.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#btn_to_edit').click(function() {
+                $('#box_listing').fadeOut(function() {
+                    $('#section_edit').fadeIn();
+                })
+            });
+
+            $('.bg-stabilo').click(function() {
+                $('#box_listing').fadeOut(function() {
+                    $('#section_edit').fadeIn();
+                })
+            });
+
+            // GLOBAL FOR HEADER POPUP ACCOUNT
+            $('#btn_head_pic').click(function() {
+                var header_pic_height = $('#header_pic').outerHeight();
+                var header_pic_top = parseInt(header_pic_height) + parseInt(20);
+                $('#popup_account').css('top', header_pic_top);
+
+                $('#popup_account').toggleClass('show');
+            })
+        });
+    </script>
+</body>
+</html>

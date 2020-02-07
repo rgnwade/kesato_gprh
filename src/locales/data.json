@@ -1,0 +1,32 @@
+{
+  "en": {
+    "admin": "admin",
+    "createVenue": "create venue",
+    "dashboard": "dashboard",
+    "invoice": "invoice",
+    "login": "login",
+    "logout": "logout",
+    "manager": "gérer",
+    "managerBilling": "owner billing",
+    "managerVenues": "owner venues",
+    "register": "register",
+    "student": "student",
+    "superAdmin": "super admin",
+    "venue": "venue"
+  },
+  "fr": {
+    "admin": "admin",
+    "createVenue": "ajout d'un établissement",
+    "dashboard": "tableau de bord",
+    "invoice": "facture",
+    "login": "se connecter",
+    "logout": "déconnexion",
+    "manager": "gérer",
+    "managerBilling": "gérer mes factures",
+    "managerVenues": "gérer mes etablissements",
+    "student": "eléves",
+    "superAdmin": "super admin",
+    "register": "créer un compte",
+    "venue": "etablissements"
+  }
+}
